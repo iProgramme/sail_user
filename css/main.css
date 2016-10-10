@@ -1,6 +1,6 @@
 @charset "utf-8";
 *{margin:0;padding:0;}
-body{font-family:"Microsoft Yahei";background:#f5f5f5;color:#000;padding:0;margin:0; overflow: height:100%;position: relative;font-size: 14px;}
+body{font-family:"Microsoft Yahei";background:#f5f5f5;color:#000;padding:0;margin:0; height:100%;position: relative;font-size: 14px;}
 html{height: 100%}
 body,div,ol,ul,li,p,a,dl,dt,dd,span,h1,h2,h3,h4,h5,h6,input,button,strong,b,em,i,img{padding:0;margin:0; border: 0;font-family: "Microsoft Yahei";}
 table{border-collapse:collapse;border-spacing:0;}
@@ -39,7 +39,7 @@ input[type="button"]{cursor: pointer;}
 .load_square .index_test{border: 0} 
 .load_square .index_test input{border: 1px solid #bdbdbd;width: 190px}
 .load_square .index_test span{border: 1px solid #bdbdbd;border-right: 0;}
-.load_square .index_test .testnum{width: 48px;height: 37px;margin-left: 10px;border: 1px solid #bdbdbd;text-align: center;line-height: 37px;}
+.load_square .index_test .testnum{width: 60px;height: 37px;margin-left: 10px;border: 1px solid #bdbdbd;text-align: center;line-height: 37px;}
 /*common*/
 .main_head{height: 30px;background-color: #ea2e49;width: 100%;text-align: right;}
 .main_head .wid1225{background-color: #ea2e49;}
@@ -191,7 +191,7 @@ input[type="button"]{cursor: pointer;}
 .add_example2 li{padding: 10px 0}
 .add_example2 li span{min-width: 70px;text-align: right;}
 .add_example2 li label span{text-align: left;}
-.add_example2 li input[type="text"]{width: 270px}
+.add_example2 li input[type="text"],.add_example4 .wid270 input[type="text"]{width: 270px}
 .add_example2 li select{width: 91px}
 .add_example2 li input[type="text"]#J-xl{width: 188px}
 input[type="radio"],.add_example2 li label{margin-right: 10px;}
@@ -230,10 +230,10 @@ hr{border-color: #bfbfbf;margin-bottom: 30px;}
 .putin{position: relative;padding-top: 10px;min-height: 46px}
 .content .putin .add_person{width: 83px;height: 30px;position: absolute;bottom: 15px;border: 0;right: 100px}
 .table19 table{width: 100%;text-align: center;margin-bottom: 35px;}
-.table19 th{border-left: 1px solid #cfcfcf;height: 44px;background-color: #ededef;border-right: 1px solid #cfcfcf}
+.table19 th{border-left: 1px solid #cfcfcf;height: 44px;background-color: #ededef;border-right: 1px solid #cfcfcf;font-size: 14px;}
 .table19 th:first-child,.table19 th:last-child,.table19 tr:first-child{border: 0}
 .table19 tr{border-bottom: 1px solid #e4e4e4}
-.table19 td{position: relative;padding: 11px 0}
+.table19 td{position: relative;padding: 11px 0;font-size: 13px;}
 .table19 .open_change{border: 1px solid #c2c2c2;color: #000;width: 85px;height: 25px;background: url(../img/index_load2.png) no-repeat 69px -54px;line-height: 25px;}
 .table19 td p{position: absolute;border: 1px solid #c2c2c2;width: 85px;left: calc(50% - 43.5px);top: 37px;background-color: #fff;}
 .table19 td p a{width: 100%;cursor: pointer;color: #000;line-height: 24px}
@@ -241,15 +241,17 @@ hr{border-color: #bfbfbf;margin-bottom: 30px;}
 .add_example3 li input[type="text"],.add_example3 li input[type="password"]{width: 198px;}
 .add_example3 li select{width: auto}
 .wid650_input{width: 500px;text-align: center;margin-top: 20px;}
-.wid650_input input{width: 83px;height: 28px;border: 0;background-color: #dadada;margin: 0 10px}
-.wid650_input .save{background-color: #ea2e49;color: #fff}
+.wid650_input input{width: 83px;height: 28px;border: 0;margin: 0 10px}
+.back{background-color: #dadada;}
+.save{background-color: #ea2e49;color: #fff}
 .areaspan{position: relative;top: -62px}
 .add_example2 textarea{padding: 5px}
-.tree{height: }
-
-
-
-
-
-
+.tree{height: 300px;overflow: auto;padding-left: 75px;width: 500px}
+.wid580{width: 580px}
+/*main21*/
+.add_example4 .tree{width: 450px;height: 500px;border: 1px solid #bfbfbf;padding-left: 10px;margin-right: 10px;}
+.add_example4 li span{width: 98px}
+.add_role{color: #fff;background-color: #ea2e49;}
+.change_user{color: #636363;background-color: #aeaeae;}
+.delect_user{background-color: #dadada;color: #717171}
 
