@@ -77,7 +77,7 @@
             <!-- 面包屑 -->
             <!-- 主体内容 -->
             <div class="content add_example1">
-                <div class="putin">
+                <div class="putin clear">
                     <ul>
                         <li>
                             <span>类别名称：</span>
@@ -91,8 +91,8 @@
                             </select>
                         </li>
                     </ul>
-                    <input type="button" name="" value="搜索" class="search">
-                    <input type="button" name="" value="添加" class="add_person">
+                    <a href="javascript:void(0)" class="search">搜索</a>
+                    <a href="main19_add.html" class="add_person">添加</a>
                 </div>
                 <div class="table19">
                     <table>
@@ -174,83 +174,6 @@
             </div>
             <!-- 主体内容 -->
 
-            <!-- 添加新用户 -->
-            <div class="content add_user add_example2 add_example3 disN">
-                <ul>
-                    <li class="must">
-                        <span class="grey">登录名：</span>
-                        <input type="text" name="">
-                    </li>
-                    <li class="must">
-                        <span class="grey">真实姓名：</span>
-                        <input type="text" name="">
-                    </li>
-                    <li class="must">
-                        <span class="grey">所属社区：</span>
-                        <select>
-                            <option>卡上的空间</option>
-                            <option>怄气戊二醛</option>
-                            <option>要不就用乙醇制乙烯吧</option>
-                        </select>
-                    </li>
-                    <li>
-                        <span class="grey">用户角色：</span>
-                        <label>
-                            <input type="radio" name="user" checked>
-                            <span>超级管理员</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="user">
-                            <span>社区配送员</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="user">
-                            <span>社区商家用户</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="user">
-                            <span>商城管理员</span>
-                        </label>
-
-                    </li>
-                    <li class="must">
-                        <span class="grey">密码：</span>
-                        <input type="password" name="password">
-                    </li>
-                    <li class="must">
-                        <span class="grey">重复密码：</span>
-                        <input type="password" name="password">
-                    </li>
-                    <li>
-                        <span class="grey">邮箱：</span>
-                        <input type="text" name="">
-                    </li>
-                    <li>
-                        <span class="grey">手机：</span>
-                        <input type="text" name="">
-                    </li>
-                    <li class="must">
-                        <span class="grey">用户类型：</span>
-                        <input type="text" name="">
-                    </li>
-                    <li class="must">
-                        <span class="grey">是否禁用：</span>
-                        <label>
-                            <input type="radio" name="use_not" checked>
-                            <span>否</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="use_not">
-                            <span>是</span>
-                        </label>
-                    </li>
-                </ul>
-                <div class="wid650_input">
-                    <input type="button" name="" value="保存" class="save">
-                    <input type="button" name="" value="返回" class="back">
-                </div>
-            </div>
-            <!-- 添加新用户 -->
             
         </div>
         <!-- 右侧内容 -->
@@ -273,16 +196,7 @@
                 $("td").css('z-index', '1');
             }
         })
-        // 点击添加新用户
-        $(".add_person").click(function () {
-            $(".add_example1").hide();
-            $(".add_example2").show();
-        })
-        // 点击返回
-        $(".save,.back").click(function () {
-            $(".add_example1").show();
-            $(".add_example2").hide();
-        })
+      
     </script>
   
 </body>

@@ -79,7 +79,7 @@
             <div class="content add_example1">
                 <div class="putin">
                     
-                    <input type="button" name="" value="添加" class="add_person">
+                    <a href="main20_add.html" class="add_person">添加</a>
                 </div>
                 <div class="table19">
                     <table>
@@ -149,59 +149,6 @@
             </div>
             <!-- 主体内容 -->
 
-            <!-- 添加新用户 -->
-            <div class="content add_user add_example2 add_example3 disN">
-                <ul>
-                    <li class="must">
-                        <span class="grey">角色名称：</span>
-                        <input type="text" name="">
-                    </li>
-                    <li class="must">
-                        <span class="grey">所属社区：</span>
-                        <select>
-                            <option>卡上的空间</option>
-                            <option>怄气戊二醛</option>
-                            <option>要不就用乙醇制乙烯吧</option>
-                        </select>
-                    </li>
-                    
-                    <li>
-                        <span class="grey areaspan">备注：</span>
-                        <textarea rows="5" cols="40"></textarea>
-                    </li>
-                    <li>
-                        <span class="grey">角色权限：</span>
-                        <div class="tree">
-                            阿里斯顿极乐空间1<br/>
-                            阿里斯顿极乐空间2<br/>
-                            阿里斯顿极乐空间3<br/>
-                            阿里斯顿极乐空间4<br/>
-                            阿里斯顿极乐空间5<br/>
-                            阿里斯顿极乐空间6<br/>
-                            阿里斯顿极乐空间7<br/>
-                            阿里斯顿极乐空间8<br/>
-                            阿里斯顿极乐空间9<br/>
-                            阿里斯顿极乐空间0<br/>
-                            阿里斯顿极乐空间1<br/>
-                            阿里斯顿极乐空间2<br/>
-                            阿里斯顿极乐空间3<br/>
-                            阿里斯顿极乐空间4<br/>
-                            阿里斯顿极乐空间5<br/>
-                            阿里斯顿极乐空间6<br/>
-                            阿里斯顿极乐空间7<br/>
-                            阿里斯顿极乐空间8<br/>
-                            阿里斯顿极乐空间9<br/>
-                            阿里斯顿极乐空间0<br/>
-                            阿里斯顿极乐空间1<br/>
-                        </div>
-                    </li>
-                </ul>
-                <div class="wid650_input">
-                    <input type="button" name="" value="保存" class="save">
-                    <input type="button" name="" value="返回" class="back">
-                </div>
-            </div>
-            <!-- 添加新用户 -->
             
         </div>
         <!-- 右侧内容 -->
@@ -224,16 +171,7 @@
                 $("td").css('z-index', '1');
             }
         })
-        // 点击添加新用户
-        $(".add_person").click(function () {
-            $(".add_example1").hide();
-            $(".add_example2").show();
-        })
-        // 点击返回
-        $(".save,.back").click(function () {
-            $(".add_example1").show();
-            $(".add_example2").hide();
-        })
+        
     </script>
   
 </body>

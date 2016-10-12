@@ -8,7 +8,8 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <title>管理设置-社区信息</title>
     <link href="../css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="../ssi-uploader/ssi-uploader.css"/>
+    <link href="../css/laydate.css" rel="stylesheet">
+    <link href="../css/laydate1.css" rel="stylesheet">
 </head>
 
 <body>
@@ -49,7 +50,7 @@
                 <dt class="tabs_dt7"><a href="news.html">消息通知</a></dt>
                 <dt class="tabs_dt8"><a href="compete.html">广告竞价</a></dt>
                 <dt class="tabs_dt9">建议/反馈</dt>
-                <dd class="active"><a href="javascript:void(0)">问题反馈</a></dd>
+                <dd><a href="main16.html">问题反馈</a></dd>
                 <dt class="tabs_dt10">问题设置</dt>
                 <dd><a href="main17.html">问题类别</a></dd>
                 <dd><a href="main18.html">问题内容</a></dd>
@@ -57,7 +58,7 @@
                 <dd><a href="main19.html">用户设置</a></dd>
                 <dd><a href="main20.html">角色权限</a></dd>
                 <dd><a href="main21.html">功能模块</a></dd>
-                <dd><a href="main22.html">社区信息</a></dd>
+                <dd class="active"><a href="javascript:void(0)">社区信息</a></dd>
                 <dt class="tabs_dt11">账号管理</dt>
                 <dd><a href="main23.html">账号绑定</a></dd>
             </dl>
@@ -69,25 +70,63 @@
             <div class="bread">
                 <ul>
                     <li class="bread_first">当前位置</li>
-                    <li>建议/反馈</li>
-                    <li>问题反馈</li>
+                    <li>管理设置</li>
+                    <li>社区信息</li>
                 </ul>
             </div>
             <!-- 面包屑 -->
-            <!-- 主体内容 -->
-            <div class="content add_example1">
-                <div class="add_img add_img1">
-                    <span class="addimg_span">商品图片：</span>
-                    <i>(需上传3张商品图片，比例为1:1，否则会失真)</i>
+            
 
-                    <input type="file" multiple id="ssi-upload"/>
-                </div>
-                <div class="center_btn edit_input">
-                    <input type="button" class="post" name="" value="发送">
-                    <input type="button" class="save" name="" value="保存">
+            <!-- 添加新用户 -->
+            <div class="content add_user add_example2 add_example3">
+                <ul>
+                    <li class="must">
+                        <span class="grey">社区名称：</span>
+                        <input type="text" name="">
+                    </li>
+                    <li class="must">
+                        <span class="grey">编码：</span>
+                        <input type="text" name="">
+                    </li>
+                    <li>
+                        <span class="grey">省份：</span>
+                        <select>
+                            <option>卡上的空间</option>
+                            <option>怄气戊二醛</option>
+                            <option>要不就用乙醇制乙烯吧</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="grey">城市：</span>
+                        <select>
+                            <option>卡上的空间</option>
+                            <option>怄气戊二醛</option>
+                            <option>要不就用乙醇制乙烯吧</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="grey">区域：</span>
+                        <select>
+                            <option>卡上的空间</option>
+                            <option>怄气戊二醛</option>
+                            <option>要不就用乙醇制乙烯吧</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="grey">街道地址：</span>
+                        <input type="text" name="password">
+                    </li>
+                    <li>
+                        <span class="grey areaspan">备注：</span>
+                        <textarea rows="5" cols="40"></textarea>
+                    </li>
+                </ul>
+                <div class="wid650_input">
+                    <a href="main22.html" class="save">保存</a>
+                    <a href="main22.html" class="back">返回</a>
                 </div>
             </div>
-            <!-- 主体内容 -->
+            <!-- 添加新用户 -->
             
         </div>
         <!-- 右侧内容 -->
@@ -95,12 +134,6 @@
     <!-- 内容部分 -->
     
     <script src="../js/jquery.min.js?v=2.1.4"></script>
-    <script src="../ssi-uploader/ssi-uploader.js"></script>
-    <script type="text/javascript">
-        $('#ssi-upload').ssi_uploader({url:'#',maxFileSize:6,maxNumberOfFiles:3,allowed:['jpg','gif','png']});
-        
-    </script>
-  
 </body>
 
 </html>

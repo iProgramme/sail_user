@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <title>管理设置-社区信息</title>
+    <title>店铺管理</title>
     <link href="../css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="../ssi-uploader/ssi-uploader.css"/>
+    <link href="../css/laydate.css" rel="stylesheet">
+    <link href="../css/laydate1.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,13 +44,13 @@
                 <dd><a href="main12.html">总交易额</a></dd>
                 <dt class="tabs_dt5"><a href="manage.html">店铺管理</a></dt>
                 <dt class="tabs_dt6">客服管理</dt>
-                <dd><a href="main13.html">客服管理</a></dd>
+                <dd class="active"><a href="javascript:void(0)">客服管理</a></dd>
                 <dd><a href="main14.html">问题反馈</a></dd>
                 <dd><a href="main15.html">建议反馈</a></dd>
                 <dt class="tabs_dt7"><a href="news.html">消息通知</a></dt>
                 <dt class="tabs_dt8"><a href="compete.html">广告竞价</a></dt>
                 <dt class="tabs_dt9">建议/反馈</dt>
-                <dd class="active"><a href="javascript:void(0)">问题反馈</a></dd>
+                <dd><a href="main16.html">问题反馈</a></dd>
                 <dt class="tabs_dt10">问题设置</dt>
                 <dd><a href="main17.html">问题类别</a></dd>
                 <dd><a href="main18.html">问题内容</a></dd>
@@ -69,25 +70,42 @@
             <div class="bread">
                 <ul>
                     <li class="bread_first">当前位置</li>
-                    <li>建议/反馈</li>
-                    <li>问题反馈</li>
+                    <li>客服管理</li>
+                    <li>客服管理</li>
                 </ul>
             </div>
             <!-- 面包屑 -->
             <!-- 主体内容 -->
             <div class="content add_example1">
-                <div class="add_img add_img1">
-                    <span class="addimg_span">商品图片：</span>
-                    <i>(需上传3张商品图片，比例为1:1，否则会失真)</i>
-
-                    <input type="file" multiple id="ssi-upload"/>
-                </div>
-                <div class="center_btn edit_input">
-                    <input type="button" class="post" name="" value="发送">
-                    <input type="button" class="save" name="" value="保存">
+                <div class="news">
+                    <p class="news_title">系统通知</p>
+                    <ul>
+                        <li><a href="news_add.html">
+                            <span class="news_title1">系统管理员</span>
+                            <span class="news_title2">更新了部分功能</span>
+                            <span class="news_title3">2016年10月12日14:25:19</span></a>
+                        </li>
+                        <li><a href="news_add.html">
+                            <span class="news_title1">系统管理员</span>
+                            <span class="news_title2">更新了部分功能</span>
+                            <span class="news_title3">2016年10月12日14:25:19</span></a>
+                        </li>
+                        <li><a href="news_add.html">
+                            <span class="news_title1">系统管理员</span>
+                            <span class="news_title2">更新了部分功能</span>
+                            <span class="news_title3">2016年10月12日14:25:19</span></a>
+                        </li>
+                        <li><a href="news_add.html">
+                            <span class="news_title1">系统管理员</span>
+                            <span class="news_title2">更新了部分功能</span>
+                            <span class="news_title3">2016年10月12日14:25:19</span></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- 主体内容 -->
+
+            
             
         </div>
         <!-- 右侧内容 -->
@@ -95,11 +113,7 @@
     <!-- 内容部分 -->
     
     <script src="../js/jquery.min.js?v=2.1.4"></script>
-    <script src="../ssi-uploader/ssi-uploader.js"></script>
-    <script type="text/javascript">
-        $('#ssi-upload').ssi_uploader({url:'#',maxFileSize:6,maxNumberOfFiles:3,allowed:['jpg','gif','png']});
-        
-    </script>
+
   
 </body>
 

@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <title>管理设置-社区信息</title>
+    <title>管理设置-用户设置</title>
     <link href="../css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="../ssi-uploader/ssi-uploader.css"/>
+    
 </head>
 
 <body>
@@ -29,7 +30,7 @@
                 <dd><a href="main2.html">已上架商品</a></dd>
                 <dd><a href="main3.html">已下架商品</a></dd>
                 <dd><a href="main4.html">商品补仓</a></dd>
-                <dd><a href="main41.html">类别管理</a></dd>
+                <dd class="active"><a href="javascript:void(0)">类别管理</a></dd>
                 <dt class="tabs_dt2">订单管理</dt>
                 <dd><a href="main5.html">待发货订单</a></dd>
                 <dd><a href="main6.html">待收货订单</a></dd>
@@ -49,7 +50,7 @@
                 <dt class="tabs_dt7"><a href="news.html">消息通知</a></dt>
                 <dt class="tabs_dt8"><a href="compete.html">广告竞价</a></dt>
                 <dt class="tabs_dt9">建议/反馈</dt>
-                <dd class="active"><a href="javascript:void(0)">问题反馈</a></dd>
+                <dd><a href="main16.html">问题反馈</a></dd>
                 <dt class="tabs_dt10">问题设置</dt>
                 <dd><a href="main17.html">问题类别</a></dd>
                 <dd><a href="main18.html">问题内容</a></dd>
@@ -69,25 +70,64 @@
             <div class="bread">
                 <ul>
                     <li class="bread_first">当前位置</li>
-                    <li>建议/反馈</li>
-                    <li>问题反馈</li>
+                    <li>商品管理</li>
+                    <li>类别管理</li>
                 </ul>
             </div>
             <!-- 面包屑 -->
-            <!-- 主体内容 -->
-            <div class="content add_example1">
-                <div class="add_img add_img1">
-                    <span class="addimg_span">商品图片：</span>
-                    <i>(需上传3张商品图片，比例为1:1，否则会失真)</i>
+            
+            <!-- 添加新用户 -->
+            <div class="content content41_add">
+                <div class="wid800">
+                    <ul class="clear">
+                        <li class="wid570">
+                            <span>类别名称：</span>
+                            <input type="text" name="">
+                        </li>
+                        <li>
+                            <span>一级类别：</span>
+                            <select>
+                                <option>请选择</option>
+                                <option>酒水饮料</option>
+                                <option>休闲食品</option>
+                                <option>水果蔬菜</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span>二级类别：</span>
+                            <select>
+                                <option>请选择</option>
+                                <option>酒水饮料</option>
+                                <option>休闲食品</option>
+                                <option>水果蔬菜</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span>排序：</span>
+                            <input type="text" name="">
+                        </li>
+                        <li>
+                            <span>是否隐藏：</span>
+                            <label><input type="radio" name="add41_hide" checked><span>否</span></label>
+                            <label><input type="radio" name="add41_hide"><span>是</span></label>
+                        </li>
+                        
+                    </ul>
+                    <div class="add_img add_img1">
+                        <span class="addimg_span">商品图片：</span>
+                        <i>(需上传1张商品图片，比例为1:1，否则会失真)</i>
 
-                    <input type="file" multiple id="ssi-upload"/>
+                        <input type="file" multiple id="ssi-upload"/>
+                    </div>
+                    
+                    
                 </div>
-                <div class="center_btn edit_input">
-                    <input type="button" class="post" name="" value="发送">
-                    <input type="button" class="save" name="" value="保存">
+                <div class="wid650_input">
+                    <a href="javascript:void(0)" class="save">保存</a>
+                    <a href="main41.html" class="back">返回</a>
                 </div>
             </div>
-            <!-- 主体内容 -->
+            <!-- 添加新用户 -->
             
         </div>
         <!-- 右侧内容 -->
@@ -97,10 +137,9 @@
     <script src="../js/jquery.min.js?v=2.1.4"></script>
     <script src="../ssi-uploader/ssi-uploader.js"></script>
     <script type="text/javascript">
-        $('#ssi-upload').ssi_uploader({url:'#',maxFileSize:6,maxNumberOfFiles:3,allowed:['jpg','gif','png']});
+        $('#ssi-upload').ssi_uploader({url:'#',maxFileSize:6,maxNumberOfFiles:1,allowed:['jpg','gif','png']});
         
     </script>
-  
 </body>
 
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <title>管理设置-社区信息</title>
+    <title>商品管理-发布商品</title>
     <link href="../css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="../ssi-uploader/ssi-uploader.css"/>
 </head>
@@ -15,7 +15,7 @@
     <!-- 顶部 -->
     <div class="main_head">
         <div class="wid1225">
-            <a href="#">设置</a><a href="#" class="out">退出</a>
+            <a href="set.html">设置</a><a href="#" class="out">退出</a>
         </div>
     </div>
     <!-- 顶部 -->
@@ -25,7 +25,7 @@
         <div class="tabs fl">
             <dl>
                 <dt class="tabs_dt1">商品管理</dt>
-                <dd><a href="main1.html">发布商品</a></dd>
+                <dd class="active"><a href="javascript:void(0)">发布商品</a></dd>
                 <dd><a href="main2.html">已上架商品</a></dd>
                 <dd><a href="main3.html">已下架商品</a></dd>
                 <dd><a href="main4.html">商品补仓</a></dd>
@@ -38,6 +38,7 @@
                 <dt class="tabs_dt3">物流管理</dt>
                 <dd><a href="main9.html">运费管理</a></dd>
                 <dd><a href="main10.html">地址管理</a></dd>
+                <dd><a href="main101.html">退换设置</a></dd>
                 <dt class="tabs_dt4">交易管理</dt>
                 <dd><a href="main11.html">交易记录</a></dd>
                 <dd><a href="main12.html">总交易额</a></dd>
@@ -49,7 +50,7 @@
                 <dt class="tabs_dt7"><a href="news.html">消息通知</a></dt>
                 <dt class="tabs_dt8"><a href="compete.html">广告竞价</a></dt>
                 <dt class="tabs_dt9">建议/反馈</dt>
-                <dd class="active"><a href="javascript:void(0)">问题反馈</a></dd>
+                <dd><a href="main16.html">问题反馈</a></dd>
                 <dt class="tabs_dt10">问题设置</dt>
                 <dd><a href="main17.html">问题类别</a></dd>
                 <dd><a href="main18.html">问题内容</a></dd>
@@ -60,47 +61,70 @@
                 <dd><a href="main22.html">社区信息</a></dd>
                 <dt class="tabs_dt11">账号管理</dt>
                 <dd><a href="main23.html">账号绑定</a></dd>
+
             </dl>
         </div>
         <!-- 左侧菜单栏 -->
+
         <!-- 右侧内容 -->
         <div class="content_right fl">
-            <!-- 面包屑 -->
-            <div class="bread">
-                <ul>
-                    <li class="bread_first">当前位置</li>
-                    <li>建议/反馈</li>
-                    <li>问题反馈</li>
-                </ul>
-            </div>
-            <!-- 面包屑 -->
-            <!-- 主体内容 -->
-            <div class="content add_example1">
-                <div class="add_img add_img1">
-                    <span class="addimg_span">商品图片：</span>
-                    <i>(需上传3张商品图片，比例为1:1，否则会失真)</i>
+            <div class="content_main">
+                <!-- 面包屑 -->
+                <div class="bread">
+                    <ul>
+                        <li class="bread_first">当前位置</li>
+                        <li>商品管理</li>
+                        <li>发布商品</li>
+                    </ul>
+                </div>
+                <!-- 面包屑 -->
+                <!-- 主体内容 -->
+                <div class="content">
+                    <div class="wid800">
+                        <ul class="clear">
+                            <li class="wid570">
+                                <span>建议标题：</span>
+                                <input type="text" name="">
+                            </li>
+                            <li class="wid570">
+                                <span class="top-90">建议内容：</span>
+                                <textarea rows="7" cols="97"></textarea>
+                            </li>
+                            
+                        </ul>
+                        <div class="add_img add_img1">
+                            <span class="addimg_span">商品图片：</span>
+                            <i>(需上传3张商品图片，比例为1:1，否则会失真)</i>
 
-                    <input type="file" multiple id="ssi-upload"/>
+                            <input type="file" multiple id="ssi-upload"/>
+                        </div>
+                        
+                        <!-- 清空保存 -->
+                        <div class="btn">
+                            <a href="main15.html" class="btn2">保存</a>
+                            <a href="main15.html" class="btn1">返回</a>
+                        </div>
+                        <!-- 清空保存 -->
+                    </div>
                 </div>
-                <div class="center_btn edit_input">
-                    <input type="button" class="post" name="" value="发送">
-                    <input type="button" class="save" name="" value="保存">
-                </div>
+                <!-- 主体内容 -->
             </div>
-            <!-- 主体内容 -->
-            
         </div>
         <!-- 右侧内容 -->
     </div>
     <!-- 内容部分 -->
-    
     <script src="../js/jquery.min.js?v=2.1.4"></script>
     <script src="../ssi-uploader/ssi-uploader.js"></script>
     <script type="text/javascript">
         $('#ssi-upload').ssi_uploader({url:'#',maxFileSize:6,maxNumberOfFiles:3,allowed:['jpg','gif','png']});
-        
+        // 清空内容
+        $(".btn .btn1").click(function () {
+            $("input").val("");
+            $("select").val("请选择");
+            $(".btn1").val("清空内容");
+            $(".btn2").val("保存");
+        })
     </script>
-  
 </body>
 
 </html>

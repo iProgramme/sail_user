@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <title>管理设置-社区信息</title>
+    <title>店铺管理</title>
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/laydate.css" rel="stylesheet">
     <link href="../css/laydate1.css" rel="stylesheet">
@@ -44,7 +44,7 @@
                 <dd><a href="main12.html">总交易额</a></dd>
                 <dt class="tabs_dt5"><a href="manage.html">店铺管理</a></dt>
                 <dt class="tabs_dt6">客服管理</dt>
-                <dd><a href="main13.html">客服管理</a></dd>
+                <dd class="active"><a href="javascript:void(0)">客服管理</a></dd>
                 <dd><a href="main14.html">问题反馈</a></dd>
                 <dd><a href="main15.html">建议反馈</a></dd>
                 <dt class="tabs_dt7"><a href="news.html">消息通知</a></dt>
@@ -58,7 +58,7 @@
                 <dd><a href="main19.html">用户设置</a></dd>
                 <dd><a href="main20.html">角色权限</a></dd>
                 <dd><a href="main21.html">功能模块</a></dd>
-                <dd class="active"><a href="javascript:void(0)">社区信息</a></dd>
+                <dd><a href="main22.html">社区信息</a></dd>
                 <dt class="tabs_dt11">账号管理</dt>
                 <dd><a href="main23.html">账号绑定</a></dd>
             </dl>
@@ -70,80 +70,60 @@
             <div class="bread">
                 <ul>
                     <li class="bread_first">当前位置</li>
-                    <li>管理设置</li>
-                    <li>社区信息</li>
+                    <li>客服管理</li>
+                    <li>客服管理</li>
                 </ul>
             </div>
             <!-- 面包屑 -->
             <!-- 主体内容 -->
             <div class="content add_example1">
-                <div class="putin">
+                <div class="putin clear">
                     <ul>
                         <li>
-                            <span>社区名称：</span>
+                            <span>客服电话：</span>
                             <input type="text" name="">
                         </li>
                         
                     </ul>
-                    <a href="javascript:void(0)" class="search">查询</a>
-                    <a href="main22_add.html" class="add_person">添加</a>
+                    <input type="button" name="" value="搜索" class="search">
+                    <input type="button" name="" value="添加" class="add_person">
                 </div>
                 <div class="table19">
                     <table>
                         <tr>
-                            <th style="">系统编号</th>
-                            <th>社区名称</th>
-                            <th>编码</th>
-                            <th>省份</th>
-                            <th>城市</th>
-                            <th>区域</th>
-                            <th>接到住址</th>
+                            <th style="">序号</th>
+                            <th>客服电话</th>
                             <th>操作</th>
                         </tr>
                         <tr>
                             <td>123</td>
-                            <td>kdjfhakfhj</td>
-                            <td>德莱文</td>
-                            <td>192.168.1.1</td>
-                            <td>2016-10-10 15:13:56</td>
-                            <td>好的</td>
                             <td>地球</td>
                             <td>
                                 <a href="javascript:void(0)" class="open_change">操作</a>
                                 <p class="disN">
-                                    <a href="javascript:void(0)">操作</a>
+                                    <a href="javascript:void(0)">修改</a>
                                     <a href="javascript:void(0)">删除</a>
                                 </p>
                             </td>
                         </tr>
                         <tr>
                             <td>123</td>
-                            <td>kdjfhakfhj</td>
-                            <td>德莱文</td>
-                            <td>192.168.1.1</td>
-                            <td>2016-10-10 15:13:56</td>
-                            <td>好的</td>
                             <td>地球</td>
                             <td>
                                 <a href="javascript:void(0)" class="open_change">操作</a>
                                 <p class="disN">
-                                    <a href="javascript:void(0)">操作</a>
+                                    <a href="javascript:void(0)">修改</a>
                                     <a href="javascript:void(0)">删除</a>
                                 </p>
                             </td>
                         </tr>
                         <tr>
                             <td>123</td>
-                            <td>kdjfhakfhj</td>
-                            <td>德莱文</td>
-                            <td>192.168.1.1</td>
-                            <td>2016-10-10 15:13:56</td>
-                            <td>好的</td>
                             <td>地球</td>
                             <td>
                                 <a href="javascript:void(0)" class="open_change">操作</a>
                                 <p class="disN">
-                                    <a href="javascript:void(0)">操作</a>
+                                    <a href="javascript:void(0)">修改</a>
                                     <a href="javascript:void(0)">删除</a>
                                 </p>
                             </td>
@@ -168,13 +148,31 @@
             </div>
             <!-- 主体内容 -->
 
-           
+            
             
         </div>
         <!-- 右侧内容 -->
     </div>
     <!-- 内容部分 -->
-    
+    <!-- 弹窗 -->
+    <div class="bg000 disN">
+        <div class="open_window">
+            <p class="title">
+                <span>添加店铺</span>
+                <a href="javascript:void(0)" class="close"></a>
+            </p>
+            <ul>
+                <li>
+                    <span>客服电话：</span>
+                    <input type="text" name="">
+                </li>
+            </ul>
+            <p class="save_input">
+                <input type="button" name="" value="保存" class="save save2">
+            </p>
+        </div>
+    </div>
+    <!-- 弹窗 -->
     <script src="../js/jquery.min.js?v=2.1.4"></script>
 
 
@@ -190,6 +188,13 @@
                 $("td p").hide();
                 $("td").css('z-index', '1');
             }
+        })
+        // 点击添加新用户
+        $(".add_person").click(function () {
+            $(".bg000").show();
+        })
+        $(".cancel,.close").click(function () {
+            $(".bg000").hide()
         })
         
     </script>
