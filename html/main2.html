@@ -8,6 +8,8 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <title>商品管理-出售中商品</title>
     <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/laydate.css" rel="stylesheet">
+    <link href="../css/laydate1.css" rel="stylesheet">
 </head>
 
 <body>
@@ -81,7 +83,7 @@
                     <div class="wid1100_input">
                         <ul class="wid85 clear">
                             <li><span>商品编号：</span><input type="text"></li>
-                            <li><span>上架时间：</span><input type="text"></li>
+                            <li><span>上架时间：</span><input type="text" id="J-xl"></li>
                             <li><span>关键词：</span><input type="text"></li>
                         </ul>
                         <input type="button" name="" class="search" value="搜&nbsp;&nbsp;&nbsp;&nbsp;索">
@@ -162,6 +164,16 @@
     </div>
     <!-- 内容部分 -->
     <script src="../js/jquery.min.js?v=2.1.4"></script>
+    <!-- 日期 -->
+    <script type="text/javascript" src="../js/laydate.dev.js"></script>
+    <!-- 日期 -->
+    <!-- 日期 -->
+    <script type="text/javascript">
+        laydate({
+            elem: '#J-xl'
+        });
+        
+    </script>
     <script type="text/javascript">
         // 复选框，点击全选，点下面的栏目后取消全选，功能实现
         $(".wid1100_bar input[type=checkbox]").click(function () {

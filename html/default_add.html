@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <title>首页</title>
+    <title>商品管理-出售中商品</title>
     <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/laydate.css" rel="stylesheet">
+    <link href="../css/laydate1.css" rel="stylesheet">
 </head>
 
 <body>
@@ -25,9 +27,9 @@
             <dl>
                 <dt class="tabs_dt1">商品管理</dt>
                 <dd><a href="main1.html">发布商品</a></dd>
-                <dd><a href="main2.html">已上架商品</a></dd>
+                <dd class="active"><a href="javascript:void(0)">已上架商品</a></dd>
                 <dd><a href="main3.html">已下架商品</a></dd>
-                <dd class="active"><a href="javascript:void(0)">商品补仓</a></dd>
+                <dd><a href="main4.html">商品补仓</a></dd>
                 <dd><a href="main41.html">类别管理</a></dd>
                 <dt class="tabs_dt2">订单管理</dt>
                 <dd><a href="main5.html">待发货订单</a></dd>
@@ -69,44 +71,41 @@
             <div class="bread">
                 <ul>
                     <li class="bread_first">当前位置</li>
-                    <li>首页</li>
+                    <li>商品管理</li>
+                    <li>已上架商品</li>
                 </ul>
             </div>
             <!-- 面包屑 -->
-            
             <!-- 主体内容 -->
             <div class="content">
-                <!-- 标签切换 -->
-                <div class="cuts"><span class="cut_active">订单事项</span><span>商品事项</span></div>
-                <!-- 标签切换 -->
-                <!-- 自营补仓 content_main没有样式，只作为切换 -->
-                <div class="content_main content_main1">
-                    <div class="index_dl">
-                       <p class="index_dt">订单事项</p>
-                       <ul class="index_dd clear">
-                         <li><a href="main5.html">待发货订单：2</a></li>
-                         <li><a href="main5.html">被催订单：2</a></li>
-                         <li><a href="main6.html">待收货订单：2</a></li>
-                         <li><a href="main7.html">退款/售后：2</a></li>
-                         <li><a href="default_add.html">订单新增评论：2</a></li>
-                       </ul>
+                <div class="content_main">
+                    <!-- 输入框 -->
+                    <div class="wid1100_input">
+                        <ul class="wid85 clear">
+                            <li><span>订单编号：</span><input type="text"></li>
+                            <li><span>买家昵称：</span><input type="text"></li>
+                            <li><span>下单时间：</span><input type="text"  id="J-xl"></li>
+                        </ul>
+                        <input type="button" name="" class="search" value="搜&nbsp;&nbsp;&nbsp;&nbsp;索">
                     </div>
-                </div>
-                <!-- 自营补仓 -->
-
-                <!-- 寄售补仓 -->
-                <div class="content_main content_main5 disN">
-                   <div class="index_dl">
-                       <p class="index_dt">商品事项</p>
-                       <ul class="index_dd clear">
-                         <li><a href="main4.html">自营商品补仓：2</a></li>
-                         <li><a href="main4.html">寄售商品补仓：2</a></li>
-                         <li><a href="main2.html">商品上架：2</a></li>
-                         <li><a href="main3.html">商品下架：2</a></li>
-                       </ul>
+                    <!-- 输入框 -->
+                    
+                    <!-- 翻页 -->
+                    <div class="pages">
+                        <span class="sumhis">共777条记录</span>
+                        <input type="button" name="" class="pages_pre">
+                        <ul class="clear">
+                            <li><a href="javascript:void(0)">1</a></li>
+                            <li><a href="javascript:void(0)" class="page_active">2</a></li>
+                            <li><a href="javascript:void(0)">3</a></li>
+                            <li><a href="javascript:void(0)">4</a></li>
+                            <li><a href="javascript:void(0)">5</a></li>
+                        </ul>
+                        <input type="button" name="" class="pages_next">
+                        <span class="sumpage">共5页</span>
                     </div>
+                    <!-- 翻页 -->
                 </div>
-                <!-- 寄售补仓 -->
             </div>
             <!-- 主体内容 -->
         </div>
@@ -114,18 +113,17 @@
     </div>
     <!-- 内容部分 -->
     <script src="../js/jquery.min.js?v=2.1.4"></script>
+    <!-- 日期 -->
+    <script type="text/javascript" src="../js/laydate.dev.js"></script>
+    <!-- 日期 -->
+    <!-- 日期 -->
     <script type="text/javascript">
-     
-        // 切换订单事项和商品事项
-        $(".cuts span").click(function () {
-            var num=$(this).index();
-            $(".cuts span").removeClass('cut_active');
-            $(this).addClass('cut_active');
-            $(".content_main").hide();
-            $(".content_main").eq(num).show();
-        })
-        
-       
+        laydate({
+            elem: '#J-xl'
+        });
+        laydate({
+            elem: '#J-xl2'
+        });
     </script>
 </body>
 

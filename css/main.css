@@ -135,6 +135,7 @@ input[type="button"]{cursor: pointer;}
 .apply .wid1100_bar{padding-top: 25px;}
 .content41_add .wid800 li{width: 100%}
 .wid800 li label span{width: auto;margin-right: 15px;}
+.content .longdl td input[type="text"]{height: 22px;width: 60px;background-color: #fff;border-color: #dcdcdc;line-height: 24px;}
 /*main5*/
 .longdl dt span{min-width: 180px;padding-right: 20px;}
 .longdl dt .fr{min-width: auto}
@@ -149,6 +150,7 @@ input[type="button"]{cursor: pointer;}
 .longdl table a{width: 114px;text-align: center;position: relative;background: none;color: #000}
 .longdl table a:hover{text-decoration: underline;}
 .longdl table input{height: 24px;width: 72px;background-color: #f0f0f0;border-color: #dcdcdc}
+.longdl table .save{background-color: #75b6ff;color: #fff;width: 60px}
 /*时间*/
 #J-xl,#J-xl2{background: url(../img/time.png) no-repeat 176px 5px;}
 .wid1100_bar p .fl{min-width: 150px;text-align: center;}
