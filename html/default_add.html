@@ -77,7 +77,7 @@
             </div>
             <!-- 面包屑 -->
             <!-- 主体内容 -->
-            <div class="content">
+            <div class="content bgc_f5">
                 <div class="content_main">
                     <!-- 输入框 -->
                     <div class="wid1100_input">
@@ -90,6 +90,36 @@
                     </div>
                     <!-- 输入框 -->
                     
+                    <!-- 一个商品条目 -->
+                    <div class="deadd_bar clear">
+                        <div class="add_bar1 fl">
+                            <img src="../img/alkdjasklhdaskj.gif" height="100" width="100">
+                            <ul>
+                                <li>华农酸奶250ml</li>
+                                <li>订单编号：91287329</li>
+                                <li>买家昵称：八二年矿泉水</li>
+                                <li>2016年10月13日10:51:27</li>
+                            </ul>
+                        </div>
+                        <div class="add_bar2 fl">
+                            <ul>
+                                <li>
+                                    <span class="add_hold1">[买家评论]</span>
+                                    <span class="add_hold2">
+“你要什么？”老人问。 <br>“我想要…一枚戒指。”男人的语气悲凉中带着坚定。<br> “你要来没用。这个舞台很快就不再属于你了。” <br>“…我知道。” <br>“那怎么？” <br>“我看不清未来，或许会用最初的或新的方式生活。舍不得是当然的…荣耀，金钱…其实不重要，只是那戒指…至少我能记得我存在过，也曾经历过一个时代…唉，算了…” <br>老人看着他离去的背影，掏出一枚戒指扔过去，<br>男人捡起来，看着朴素的戒指微微发愣。 <br>“刚好剩最后一个没卖，就当送别吧。”老人轻笑，<br>“再见…AP易。”</span>
+                                    <span class="add_hold3">2016-10-13 11:12:46</span>
+                                    <a href="javascript:void(0)" class="add_hold4">回复</a>
+                                </li>
+                                <li>
+                                    <span class="add_hold1">[回复]</span>
+                                    <span class="add_hold2">便宜的东西除了便宜，都是缺点；贵的东西除了贵，都是优点。<br>我只有一个缺点，没钱</span>
+                                    <span class="add_hold3">2016-10-13 11:12:46</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 一个商品条目 -->
+
                     <!-- 翻页 -->
                     <div class="pages">
                         <span class="sumhis">共777条记录</span>
@@ -112,6 +142,16 @@
         <!-- 右侧内容 -->
     </div>
     <!-- 内容部分 -->
+    <div class="bg000 disN">
+        <div class="open_window">
+            <p class="title">正在回复<span>八二年的矿泉水</span> <a href="javascript:void(0)" class="close"></a></p>
+            <textarea rows="8"></textarea>
+            <div class="open_input">
+                <input type="button" name="" value="发送" class="sure">
+                <input type="button" name="" value="取消" class="cancel">
+            </div>
+        </div>
+    </div>
     <script src="../js/jquery.min.js?v=2.1.4"></script>
     <!-- 日期 -->
     <script type="text/javascript" src="../js/laydate.dev.js"></script>
@@ -124,6 +164,16 @@
         laydate({
             elem: '#J-xl2'
         });
+    </script>
+    <script type="text/javascript">
+        // 打开回复框
+        $(".add_hold4").click(function () {
+            $(".bg000").show()
+        })
+        // 关闭回复框
+        $(".cancel,.close").click(function () {
+            $(".bg000").hide()
+        })
     </script>
 </body>
 
