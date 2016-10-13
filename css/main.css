@@ -99,7 +99,7 @@ input[type="button"]{cursor: pointer;}
 .wid1100_input{position: relative;background-color: #fff;}
 .wid1100_bar{padding-left: 30px;}
 .wid1100_bar input[type="button"]{width: 68px;height: 33px;background-color: #f0f0f0;margin-left: 30px;border: 1px solid #dcdcdc;}
-.longdl{width: 97%;margin: 25px auto;min-width: 1060px}
+.longdl{width: 97%;margin: 0px auto 25px;min-width: 1060px}
 .longdl dt{background-color: #f5f5f5;line-height: 40px;padding-left: 10px;border: 1px solid #e5e5e5;border-bottom: 0;position: relative;}
 .longdl dd{position: relative;min-height: 126px;border: 1px solid #e5e5e5;border-top: 0;background-color: #fff;}
 .longdl dd img{position: relative;width: 100px;height: 100px;top: 15px;left: 15px}
@@ -223,7 +223,7 @@ hr{border-color: #bfbfbf;margin-bottom: 30px;}
 .address_squ p{position: relative;height: 30px;line-height: 30px;}
 .address_squ p a{position: absolute;width: 20px;height: 20px;right: -5px;top: 0}
 .address3,.delect{background: url(../img/index_load2.png) no-repeat;}
-.address3{background-position: 3px 3px;width: 20px;height: 20px;position: relative;top: 6px;}
+.address3{background-position: 3px 3px;width: 20px;height: 20px;position: relative;top: 6px;cursor: pointer;}
 .delect{background-position: 0px -35px;}
 .address4{background-color: #f6c347;color: #fff;height: 18px;font-size: 12px;line-height: 18px;padding: 0 2px;font-weight: lighter;font-family: 'simsun';cursor: pointer;}
 .change_address{position: absolute;right: 10px;bottom: 0px}
@@ -257,7 +257,7 @@ hr{border-color: #bfbfbf;margin-bottom: 30px;}
 .wid650_input{width: 500px;text-align: center;margin-top: 20px;}
 .wid650_input input,.wid650_input a{width: 83px;height: 28px;border: 0;margin: 0 10px;line-height: 28px;text-align: center;border-radius: 2px}
 .back{background-color: #dadada;color: #717171}
-.save{background-color: #ea2e49;color: #fff}
+input.save[type="button"]{background-color: #ea2e49;color: #fff}
 .areaspan{position: relative;top: -70px}
 .add_example2 textarea{padding: 5px}
 .tree{height: 300px;overflow: auto;padding-left: 75px;width: 500px}
@@ -317,7 +317,7 @@ hr{border-color: #bfbfbf;margin-bottom: 30px;}
 article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .artile_time{text-align: right;padding: 0 10px;font-size: 12px;}
 /*index*/
-.index_dl{margin: 10px 30px;border: 1px solid #a2c9ff; }
+.index_dl{margin: 10px 30px;border: 1px solid #dcdcdc; }
 .index_dt{height: 35px;line-height: 35px;padding: 0 10px;background-color: #ededed;}
 .index_dd{padding: 5px 30px}
 .index_dd li{float: left;width: 33%;height: 30px;line-height: 30px;}
@@ -332,13 +332,14 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .add_bar2 li:last-child{border: 0}
 .add_bar2 li .add_hold1{position: absolute;top: 10px;font-weight: bolder;}
 .add_bar2 li .add_hold2{position: relative;top: 0;left: 65px;width: 715px;margin-bottom: 20px;}
-.add_bar2 li .add_hold3{font-family: 'simsun';font-size: 13px;color: #535353}
+.add_bar2 li .add_hold3{font-family: 'simsun';font-size: 13px;color: #535353;width: 100%}
 .add_bar2 li .add_hold4{position: absolute;right: 20px;bottom: 10px}
 .title span{color: #769ffc;margin-left: 10px;}
 .open_window textarea{width: 95%;margin: 15px 2.5% 10px}
-
-
-
+.apply{background-color: #fff;padding-top: 25px;margin-top: 25px;}
+.bgc_f5 .width100{width: 100%;padding: 25px 10px}
+.content_main3 .add_bar2{border: 0;padding-left: 0;width: 100%}
+.content_main5{padding-top: 25px}
 
 
 

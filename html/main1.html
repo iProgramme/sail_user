@@ -26,14 +26,14 @@
             <dl>
                 <dt class="tabs_dt1">商品管理</dt>
                 <dd class="active"><a href="javascript:void(0)">发布商品</a></dd>
-                <dd><a href="main2.html">已上架商品</a></dd>
+                <dd><a href="main2.html">出售中商品</a></dd>
                 <dd><a href="main3.html">已下架商品</a></dd>
                 <dd><a href="main4.html">商品补仓</a></dd>
                 <dd><a href="main41.html">类别管理</a></dd>
                 <dt class="tabs_dt2">订单管理</dt>
                 <dd><a href="main5.html">待发货订单</a></dd>
                 <dd><a href="main6.html">待收货订单</a></dd>
-                <dd><a href="main7.html">待退款/售后</a></dd>
+                <dd><a href="main7.html">退款/售后</a></dd>
                 <dd><a href="main8.html">订单记录</a></dd>
                 <dt class="tabs_dt3">物流管理</dt>
                 <dd><a href="main9.html">运费管理</a></dd>
@@ -59,7 +59,7 @@
                 <dd><a href="main20.html">角色权限</a></dd>
                 <dd><a href="main21.html">功能模块</a></dd>
                 <dd><a href="main22.html">社区信息</a></dd>
-                <dt class="tabs_dt11">账号管理</dt>
+                <dt class="tabs_dt12">账号管理</dt>
                 <dd><a href="main23.html">账号绑定</a></dd>
 
             </dl>
@@ -152,8 +152,8 @@
     <script src="../js/jquery.min.js?v=2.1.4"></script>
     <script src="../ssi-uploader/ssi-uploader.js"></script>
     <script type="text/javascript">
-        $('#ssi-upload').ssi_uploader({url:'#',maxFileSize:6,maxNumberOfFiles:1,allowed:['jpg','gif','png']});
-        $('#ssi-upload2').ssi_uploader({url:'#',maxFileSize:6,maxNumberOfFiles:3,allowed:['jpg','gif','png']});
+        $('#ssi-upload').ssi_uploader({url:'#',maxFileSize:1,maxNumberOfFiles:1,allowed:['jpg','gif','png']});
+        $('#ssi-upload2').ssi_uploader({url:'#',maxFileSize:3,maxNumberOfFiles:3,allowed:['jpg','gif','png']});
         // 清空内容
         $(".btn .btn1").click(function () {
             $("input").val("");

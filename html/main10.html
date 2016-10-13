@@ -25,14 +25,14 @@
             <dl>
                 <dt class="tabs_dt1">商品管理</dt>
                 <dd><a href="main1.html">发布商品</a></dd>
-                <dd><a href="main2.html">已上架商品</a></dd>
+                <dd><a href="main2.html">出售中商品</a></dd>
                 <dd><a href="main3.html">已下架商品</a></dd>
                 <dd><a href="main4.html">商品补仓</a></dd>
                 <dd><a href="main41.html">类别管理</a></dd>
                 <dt class="tabs_dt2">订单管理</dt>
                 <dd><a href="main5.html">待发货订单</a></dd>
                 <dd><a href="main6.html">待收货订单</a></dd>
-                <dd><a href="main7.html">待退款/售后</a></dd>
+                <dd><a href="main7.html">退款/售后</a></dd>
                 <dd><a href="main8.html">订单记录</a></dd>
                 <dt class="tabs_dt3">物流管理</dt>
                 <dd><a href="main9.html">运费管理</a></dd>
@@ -57,7 +57,7 @@
                 <dd><a href="main20.html">角色权限</a></dd>
                 <dd><a href="main21.html">功能模块</a></dd>
                 <dd><a href="main22.html">社区信息</a></dd>
-                <dt class="tabs_dt11">账号管理</dt>
+                <dt class="tabs_dt12">账号管理</dt>
                 <dd><a href="main23.html">账号绑定</a></dd>
             </dl>
         </div>
@@ -274,8 +274,55 @@
         <!-- 右侧内容 -->
     </div>
     <!-- 内容部分 -->
-    <!-- 弹窗 -->
-    <div class="bg000 disN">
+    <!-- 弹窗-新增收货地址 -->
+    <div class="bg000 disN bg0001">
+        <div class="open_window open_window10">
+            <p class="title">
+                <span>编辑收货地址</span>
+                <span class="grey">打*为必填项</span>
+                <a href="javascript:void(0)" class="close"></a>
+            </p>
+            <dl>
+                <dt>*收货人</dt>
+                <dd><input type="text" name="" class="wid170" placeholder="长度不超过25个字符"></dd>
+                <dt>*所在地区</dt>
+                <dd>
+                    <select>
+                        <option>请选择</option>
+                        <option>中国</option>
+                        <option>中国</option>
+                    </select>
+                    <select>
+                        <option>请选择</option>
+                        <option>中国</option>
+                        <option>中国</option>
+                    </select>
+                    <select>
+                        <option>请选择</option>
+                        <option>中国</option>
+                        <option>中国</option>
+                    </select>
+                </dd>
+                <dt>*详细地址</dt>
+                <dd><input type="text" name="" class="wid400" placeholder="建议您如实填写详细收货地址，例如接到名称，门牌号，楼层和房间号等信息"></dd>
+                <dt>*手机号码</dt>
+                <dd><input type="text" name="" value="12312312" class="wid170"></dd>
+                <dt>电话号码</dt>
+                <dd><input class="wid80" type="text" name="" value=""> - <input class="wid80" type="text" name="" value=""> - <input class="wid80" type="text" name="" value=""></dd>
+            </dl>
+            <div class="title_bottom">
+                <p>
+                    <input type="checkbox" name="">
+                    <span>设为默认地址</span>
+                </p>
+                <p><input type="button" name="" value="保存" class="save"></p>
+            </div>
+        </div>
+    </div>
+    <!-- 弹窗-新增收货地址 -->
+
+    <!-- 弹窗-编辑收货地址 -->
+    <div class="bg000 disN bg0002">
         <div class="open_window open_window10">
             <p class="title">
                 <span>编辑收货地址</span>
@@ -319,7 +366,7 @@
             </div>
         </div>
     </div>
-    <!-- 弹窗 -->
+    <!-- 弹窗-编辑收货地址 -->
     <script src="../js/jquery.min.js?v=2.1.4"></script>
     
 
@@ -340,8 +387,11 @@
         })
         // 新增收货地址，弹窗
         $(".add_address").click(function () {
-            $(".bg000").show()
+            $(".bg0001").show()
         })
+        $(".address3,.change_address").click(function () {
+            $(".bg0002").show()
+        });
         // 关闭收货地址，弹窗
         $(".save,.close").click(function () {
             $(".bg000").hide()
