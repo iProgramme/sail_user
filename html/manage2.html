@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>商品管理-发布商品</title>
+    <link href="../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../webuploader/webuploader.css">
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="main_head">
+        <div class="wid1225">
+            <a href="set.html">设置</a><a href="#" class="out">退出</a>
+        </div>
+    </div>
+    <!-- 顶部 -->
+    <!-- 内容部分 -->
+    <div class="wid1225 clear">
+        <!-- 左侧菜单栏 -->
+        <div class="tabs fl">
+            <dl>
+                <dt class="tabs_dt1">商品管理</dt>
+                <dd class="active"><a href="javascript:void(0)">发布商品</a></dd>
+                <dd><a href="main2.html">出售中商品</a></dd>
+                <dd><a href="main3.html">已下架商品</a></dd>
+                <dd><a href="main4.html">商品补仓</a></dd>
+                <dd><a href="main41.html">类别管理</a></dd>
+                <dt class="tabs_dt2">订单管理</dt>
+                <dd><a href="main5.html">待发货订单</a></dd>
+                <dd><a href="main6.html">待收货订单</a></dd>
+                <dd><a href="main7.html">退款/售后</a></dd>
+                <dd><a href="main8.html">订单记录</a></dd>
+                <dt class="tabs_dt3">物流管理</dt>
+                <dd><a href="main9.html">运费管理</a></dd>
+                <dd><a href="main10.html">地址管理</a></dd>
+                <dd><a href="main101.html">退换设置</a></dd>
+                <dt class="tabs_dt4">交易管理</dt>
+                <dd><a href="main11.html">交易记录</a></dd>
+                <dd><a href="main12.html">总交易额</a></dd>
+                <dt class="tabs_dt5"><a href="manage.html">店铺管理</a></dt>
+                <dt class="tabs_dt6">客服管理</dt>
+                <dd><a href="main13.html">客服管理</a></dd>
+                <dd><a href="main14.html">问题反馈</a></dd>
+                <dd><a href="main15.html">建议反馈</a></dd>
+                <dt class="tabs_dt7"><a href="news.html">消息通知</a></dt>
+                <dt class="tabs_dt8"><a href="compete.html">广告竞价</a></dt>
+                <dt class="tabs_dt9">建议/反馈</dt>
+                <dd><a href="main16.html">问题反馈</a></dd>
+                <dt class="tabs_dt10">问题设置</dt>
+                <dd><a href="main17.html">问题类别</a></dd>
+                <dd><a href="main18.html">问题内容</a></dd>
+                <dt class="tabs_dt11">管理设置</dt>
+                <dd><a href="main19.html">用户设置</a></dd>
+                <dd><a href="main20.html">角色权限</a></dd>
+                <dd><a href="main21.html">功能模块</a></dd>
+                <dd><a href="main22.html">社区信息</a></dd>
+                <dt class="tabs_dt12">账号管理</dt>
+                <dd><a href="main23.html">账号绑定</a></dd>
+
+            </dl>
+        </div>
+        <!-- 左侧菜单栏 -->
+
+        <!-- 右侧内容 -->
+        <div class="content_right fl">
+            <div class="content_main">
+                <!-- 面包屑 -->
+                <div class="bread">
+                    <ul>
+                        <li class="bread_first">当前位置</li>
+                        <li>商品管理</li>
+                        <li>发布商品</li>
+                    </ul>
+                </div>
+                <!-- 面包屑 -->
+                <!-- 主体内容 -->
+                <div class="content">
+                    <div class="wid800 width100">
+                        <ul class="clear">
+                            <li class="z-in3 bgnone">
+                                <span>店铺名称：</span>
+                                <span>阿斯利康打算离开的骄傲</span>
+                            </li>
+                            <li>
+                              <span>店铺标志：</span>
+                              <div class="uploader_y ss_uploader_y">
+                                  <!--用来存放item-->  
+                                  <div id="thelist1" class="uploader-list"></div>  
+                                  
+                                  <!--  <div id="filePicker1">选择图片</div>  --> 
+                                   <span id="filePicker1">选择图片</span>
+                                   <button id="ctlBtn1" class="btn btn-default">开始上传</button>  
+                              <i class="ss_i">(文件格式JPG,JPEG,PNG文件小于100k,建议尺寸80px×80px)</i>
+                               
+                              </div>
+                            </li>
+                            <li class="z-in3 twoline">
+                                <span>经营地址：</span>
+                                <select>
+                                    <option>广东</option>
+                                    <option>酒水饮料</option>
+                                    <option>休闲食品</option>
+                                    <option>水果蔬菜</option>
+                                </select>
+                                <select>
+                                    <option>广州</option>
+                                    <option>酒水饮料</option>
+                                    <option>休闲食品</option>
+                                    <option>水果蔬菜</option>
+                                </select>
+                                <select>
+                                    <option>体育西路</option>
+                                    <option>酒水饮料</option>
+                                    <option>休闲食品</option>
+                                    <option>水果蔬菜</option>
+                                </select>
+                                <select>
+                                    <option>海底捞</option>
+                                    <option>酒水饮料</option>
+                                    <option>休闲食品</option>
+                                    <option>水果蔬菜</option>
+                                </select>
+                                <input type="text" name="">
+                            </li>
+                            <li>
+                                <span>营业时间：</span>
+                                <select>
+                                    <option>0：00</option>
+                                    <option>1：00</option>
+                                    <option>2：00</option>
+                                    <option>3：00</option>
+                                    <option>4：00</option>
+                                    <option>5：00</option>
+                                    <option>6：00</option>
+                                    <option>7：00</option>
+                                    <option>8：00</option>
+                                    <option>9：00</option>
+                                    <option>10：00</option>
+                                    <option>11：00</option>
+                                    <option>12：00</option>
+                                    <option>13：00</option>
+                                    <option>14：00</option>
+                                    <option>15：00</option>
+                                    <option>16：00</option>
+                                    <option>17：00</option>
+                                    <option>18：00</option>
+                                    <option>19：00</option>
+                                    <option>20：00</option>
+                                    <option>21：00</option>
+                                    <option>22：00</option>
+                                    <option>23：00</option>
+                                    <option>24：00</option>
+                                </select>
+                                -
+                                <select>
+                                    <option>0：00</option>
+                                    <option>1：00</option>
+                                    <option>2：00</option>
+                                    <option>3：00</option>
+                                    <option>4：00</option>
+                                    <option>5：00</option>
+                                    <option>6：00</option>
+                                    <option>7：00</option>
+                                    <option>8：00</option>
+                                    <option>9：00</option>
+                                    <option>10：00</option>
+                                    <option>11：00</option>
+                                    <option>12：00</option>
+                                    <option>13：00</option>
+                                    <option>14：00</option>
+                                    <option>15：00</option>
+                                    <option>16：00</option>
+                                    <option>17：00</option>
+                                    <option>18：00</option>
+                                    <option>19：00</option>
+                                    <option>20：00</option>
+                                    <option>21：00</option>
+                                    <option>22：00</option>
+                                    <option>23：00</option>
+                                    <option>24：00</option>
+                                </select>
+                            </li>
+                            <li>
+                                <span>配送所需时间：</span>
+                                <select>
+                                    <option>请选择</option>
+                                    <option>酒水饮料</option>
+                                    <option>休闲食品</option>
+                                    <option>水果蔬菜</option>
+                                </select>
+                            </li>
+                            <li>
+                                <span>配送方式：</span>
+                                <select>
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                时
+                                <select>
+                                    <option>00</option>
+                                    <option>10</option>
+                                    <option>20</option>
+                                    <option>30</option>
+                                    <option>40</option>
+                                    <option>50</option>
+                                </select>
+                            </li>
+                            <li>
+                                <span>提供自提：</span>
+                                <label><input type="radio" name="bitself" checked><i>是</i></label>
+                                <label><input type="radio" name="bitself"><i>否</i></label>
+                            </li>
+                            
+                            <li>
+                                <span>提供订餐：</span>
+                                <label><input type="radio" name="dingcan"><i>是</i></label>
+                                <label><input type="radio" name="dingcan" checked=""><i>否</i></label>
+                            </li>
+                            <li>
+                              <span>订餐类型：</span>
+                              <select>
+                                <option>早餐</option>
+                              </select>
+                            </li>
+                            <li>
+                              <span>供应时间：</span>
+                              <select>
+                                <option>0：00</option>
+                                    <option>1：00</option>
+                                    <option>2：00</option>
+                                    <option>3：00</option>
+                                    <option>4：00</option>
+                                    <option>5：00</option>
+                                    <option>6：00</option>
+                                    <option>7：00</option>
+                                    <option>8：00</option>
+                                    <option>9：00</option>
+                                    <option>10：00</option>
+                                    <option>11：00</option>
+                                    <option>12：00</option>
+                                    <option>13：00</option>
+                                    <option>14：00</option>
+                                    <option>15：00</option>
+                                    <option>16：00</option>
+                                    <option>17：00</option>
+                                    <option>18：00</option>
+                                    <option>19：00</option>
+                                    <option>20：00</option>
+                                    <option>21：00</option>
+                                    <option>22：00</option>
+                                    <option>23：00</option>
+                                    <option>24：00</option>
+                              </select>
+                              -
+                              <select>
+                                <option>0：00</option>
+                                    <option>1：00</option>
+                                    <option>2：00</option>
+                                    <option>3：00</option>
+                                    <option>4：00</option>
+                                    <option>5：00</option>
+                                    <option>6：00</option>
+                                    <option>7：00</option>
+                                    <option>8：00</option>
+                                    <option>9：00</option>
+                                    <option>10：00</option>
+                                    <option>11：00</option>
+                                    <option>12：00</option>
+                                    <option>13：00</option>
+                                    <option>14：00</option>
+                                    <option>15：00</option>
+                                    <option>16：00</option>
+                                    <option>17：00</option>
+                                    <option>18：00</option>
+                                    <option>19：00</option>
+                                    <option>20：00</option>
+                                    <option>21：00</option>
+                                    <option>22：00</option>
+                                    <option>23：00</option>
+                                    <option>24：00</option>
+                              </select>
+                            </li>
+                            <li>
+                              <span>配送方式：</span>
+                              <a href="javascript:void(0)" class="add_money">新增运费模板</a>
+
+                            </li>
+                        </ul>
+                        <div class="sailset">
+                            
+                            <table>
+                              <thead>
+                                <tr><td colspan="7">早餐</td></tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th>序号</th>
+                                  <th>订餐类别</th>
+                                  <th>供应时间</th>
+                                  <th>配送方式</th>
+                                  <th>配送类型</th>
+                                  <th>操作</th>
+                                  <th>&nbsp;</th>
+                                </tr>
+                                <tr>
+                                  <td>10</td>
+                                  <td>10</td>
+                                  <td>10</td>
+                                  <td>10</td>
+                                  <td>10</td>
+                                  <td>
+                                    <a href="javascript:void(0)" class="ss_change">修改</a>
+                                    |
+                                    <a href="javascript:void(0)" class="ss_delect">删除</a>
+                                  </td>
+                                  <td><div class="full"><div class="full"><a href="javascript:void(0)" class="">设为默认方式</a></div></td>
+                                </tr>
+                                <tr>
+                                  <td>10</td>
+                                  <td>10</td>
+                                  <td>10</td>
+                                  <td>10</td>
+                                  <td>10</td>
+                                  <td>
+                                    <a href="javascript:void(0)" class="ss_change">修改</a>
+                                    |
+                                    <a href="javascript:void(0)" class="ss_delect">删除</a>
+                                  </td>
+                                  <td><div class="full"><a href="javascript:void(0)" class="ss_moren">默认方式</a></div></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                        <!-- 清空保存 -->
+                        <div class="btn">
+                            <input type="button" class="btn1" name="" value="清空内容">
+                            <input type="button" class="btn2" name="" value="保存">
+                        </div>
+                        <!-- 清空保存 -->
+                    </div>
+                </div>
+                <!-- 主体内容 -->
+            </div>
+        </div>
+        <!-- 右侧内容 -->
+    </div>
+    <!-- 内容部分 -->
+    <script src="../js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../webuploader/webuploader.js"></script>
+    <script type="text/javascript">
+        // 清空内容
+        $(".btn .btn1").click(function () {
+            $("input").val("");
+            $("select").val("请选择");
+            $(".btn1").val("清空内容");
+            $(".btn2").val("保存");
+        })
+    </script>
+    <script type="text/javascript">
+    $(function(){  
+           /*init webuploader*/  
+           var $list=$("#thelist1");   //这几个初始化全局的百度文档上没说明，好蛋疼。  
+           var $btn =$("#ctlBtn1");   //开始上传  
+           var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
+           var thumbnailHeight = 100;  
+          
+           var uploader = WebUploader.create({  
+               // 选完文件后，是否自动上传。  
+               auto: false,  
+               fileNumLimit: 1,
+              // fileSizeLimit: 200 * 1024 * 1024,    // 200 M     上传文件总大小
+              // fileSingleSizeLimit: 2 * 1024 * 1024, //   2 M    单个文件大小
+               // swf文件路径  
+               swf: '${pageContext.request.contextPath}/js/webuploader/Uploader.swf',  
+               /* fileVal: 'feedbackFiles', */
+               // 文件接收服务端。  
+               server: 'problemFeedback_saveFile.do',  
+          
+               // 选择文件的按钮。可选。  
+               // 内部根据当前运行是创建，可能是input元素，也可能是flash.  
+               pick: '#filePicker1',  
+          
+               // 只允许选择图片文件。  
+               accept: {  
+                   title: 'Images',  
+                   extensions: 'gif,jpg,jpeg,bmp,png',  
+                   mimeTypes: 'image/*'  
+               },  
+               method:'POST',  
+           });  
+           // 当有文件添加进来的时候  
+           uploader.on( 'fileQueued', function( file ) {  // webuploader事件.当选择文件后，文件被加载到文件队列中，触发该事件。等效于 uploader.onFileueued = function(file){...} ，类似js的事件定义。  
+              console.log(file);
+               var $li = $(  
+                       '<div id="' + file.id + '" class="file-item thumbnail">' +  
+                           '<img>' +  
+                           '<div class="info">' + file.name + '</div>' +  
+                       '</div>'  
+                       ),  
+                   $img = $li.find('img');  
+          
+               // $list为容器jQuery实例  
+               $list.append( $li );  
+          
+               // 创建缩略图  
+               // 如果为非图片文件，可以不用调用此方法。  
+               // thumbnailWidth x thumbnailHeight 为 100 x 100  
+               uploader.makeThumb( file, function( error, src ) {   //webuploader方法  
+                   if ( error ) {  
+                       $img.replaceWith('<span>不能预览</span>');  
+                       return;  
+                   }  
+          
+                   $img.attr( 'src', src );  
+               }, thumbnailWidth, thumbnailHeight );  
+           });  
+           // 文件上传过程中创建进度条实时显示。  
+           uploader.on( 'uploadProgress', function( file, percentage ) {  
+               var $li = $( '#'+file.id ),  
+                   $percent = $li.find('.progress span');  
+          
+               // 避免重复创建  
+               if ( !$percent.length ) {  
+                   $percent = $('<p class="progress"><span></span></p>')  
+                           .appendTo( $li )  
+                           .find('span');  
+               }  
+          
+               $percent.css( 'width', percentage * 100 + '%' );  
+           });  
+          
+           // 文件上传成功，给item添加成功class, 用样式标记上传成功。  
+           uploader.on( 'uploadSuccess', function( file,response ) {  
+               $( '#'+file.id ).addClass('upload-state-done'); 
+               var imgUrl = $('#saveFileName').val();
+               var imgUrlStr = '';
+               //取出图片地址
+               var imgUrlJS = '{"url":"'+response.url+'"}';
+               
+               var imgUrlAr = jQuery.parseJSON(imgUrl);
+             
+               imgUrlAr.push(jQuery.parseJSON(imgUrlJS));
+               imgUrlStr = imgUrlStr+","+imgUrl;
+               $('#saveFileName').val(JSON.stringify(imgUrlAr));
+           });  
+          
+           // 文件上传失败，显示上传出错。  
+           uploader.on( 'uploadError', function( file,response ) {  
+               var $li = $( '#'+file.id ),  
+                   $error = $li.find('div.error');  
+          
+               // 避免重复创建  
+               if ( !$error.length ) {  
+                   $error = $('<div class="error"></div>').appendTo( $li );  
+               }  
+          
+               $error.text('上传失败');  
+           });  
+          
+           // 完成上传完了，成功或者失败，先删除进度条。  
+           uploader.on( 'uploadComplete', function( file ) {  
+               $( '#'+file.id ).find('.progress').remove();  
+           });  
+              $btn.on( 'click', function() {  
+                uploader.upload();  
+              });  
+          });  
+    </script>
+    
+</body>
+
+</html>

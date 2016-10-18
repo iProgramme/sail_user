@@ -76,7 +76,7 @@ input[type="button"]{cursor: pointer;}
 /*main1*/
 .wid800{width: 800px}
 .wid800 li{margin-top: 20px;width: 100%}
-.wid800 li span{width: 100px;text-align: right;}
+.wid800 li span{min-width: 100px;text-align: right;}
 .content .wid570 input[type="text"]{width: 588px}
 .content input[type="text"],.content input[type="password"]{width: 188px;border-radius: 2px;padding: 0 5px;height: 28px;line-height: 28px;}
 .content select{width: 190px;border-radius: 2px;padding: 0 5px;height: 28px;line-height: 28px;}
@@ -185,7 +185,7 @@ input[type="button"]{cursor: pointer;}
 .longdl dd table .bor_td{border-top: 1px solid #dcdcdc}
 /*弹窗*/
 .bg000{background-color: rgba(0,0,0,0.4);width: 100%;height: 100%;position: fixed;top: 0;z-index: 20;}
-.open_window{width: 640px;position: fixed;left: calc(50% - 320px);left: 50%\9;margin-left: -320px\9;top: 100px;box-shadow: 10px 10px 10px rgba(0,0,0,0.5);background-color: #fff;border: 1px solid rgba(0,0,0,0.6);border-radius: 10px;padding-bottom: 20px;}
+.open_window{width: 640px;position: fixed;left: calc(50% - 320px);left: 50%\9;margin-left: -320px\9;top: 100px;box-shadow: 10px 10px 10px rgba(0,0,0,0.5);background-color: #fff;border: 1px solid rgba(0,0,0,0.6);border-radius: 2px;padding-bottom: 20px;}
 .title{height: 35px;line-height: 35px;background-color: #f6f6f6;border-top-left-radius: 10px;border-top-right-radius: 10px;padding: 0 15px;position: relative;}
 .title a{width: 18px;height: 18px;position: absolute;background: url(../img/index_load.png) no-repeat -115px -143px;top: 10px;right: 10px}
 .open_window ul{padding-left: 15px;line-height: 35px;padding-top: 15px;}
@@ -334,7 +334,7 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .add_bar2 li .add_hold2{position: relative;top: 0;left: 65px;width: 715px;margin-bottom: 20px;}
 .add_bar2 li .add_hold3{font-family: 'simsun';font-size: 13px;color: #535353;width: 100%}
 .add_bar2 li .add_hold4{position: absolute;right: 20px;bottom: 10px}
-.title span{color: #769ffc;margin-left: 10px;}
+.title .color_769ffc{color: #769ffc;margin-left: 10px;}
 .open_window textarea{width: 95%;margin: 15px 2.5% 10px}
 .apply{background-color: #fff;padding-top: 15px;}
 .bgc_f5 .width100{width: 100%;padding: 25px 10px}
@@ -348,6 +348,34 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .btn-default{width: 86px;height: 39px;background-color: #00b7ee;color: #fff;border-radius: 4px;position: absolute;left: 100px}
 /*修改main1*/
 .wid800 textarea{width: 600px}
+.width100{width: 100%}
+/*manage2*/
+.twoline input{margin-left: 104px;margin-top: 20px;}
+.content .wid570 .twoline input[type="text"]{width: 800px}
+.content .bgnone,.content .twoline{background: none;}
+.sailset table{width: 1050px;margin-left: 27px;margin-bottom: 20px;}
+.sailset th{height: 30px}
+.sailset tbody{border: 1px solid #bfbfbf}
+.sailset th{background-color: #eee;}
+.sailset tbody td{border-top: 1px solid #bfbfbf;text-align: center;height: 45px}
+.sailset tr:nth-child(2) td{border: 0}
+.full{height: 100%;line-height: 46px;}
+.ss_uploader_y .webuploader-container{left: 130px;top: -100px}
+.ss_uploader_y{margin-top: -50px;height: 130px}
+.ss_uploader_y .btn-default{left: 260px;top: 30px}
+.ss_uploader_y .ss_i{position: relative;top: -115px;left: 250px;font-size: 12px;font-family: 'simsun';}
+.full a{width: 74px;height: 23px;background-color: #fff;color: #fff;border-radius: 2px;font-family: 'simsun';line-height: 23px;}
+.full a:hover{background-color: #f3f9ed;color: #000;height: 21px;border: 1px solid #b5d79a;width: 72px}
+.full .ss_moren{background-color: #f5c545;}
+.full .ss_moren:hover{background-color: #f5c545;;color: #fff;height: 23px;border: 0;width: 74px}
+
+
+
+
+
+
+
+
 
 
 
