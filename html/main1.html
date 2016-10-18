@@ -7,7 +7,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <title>商品管理-发布商品</title>
     <link href="../css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="../ssi-uploader/ssi-uploader.css"/>
+    <link rel="stylesheet" type="text/css" href="../webuploader/webuploader.css">
 </head>
 
 <body>
@@ -86,7 +86,7 @@
                                 <input type="text" name="">
                             </li>
                             <li class="z-in3">
-                                <span>类型：</span>
+                                <span>一级类型：</span>
                                 <select>
                                     <option>请选择</option>
                                     <option>酒水饮料</option>
@@ -95,7 +95,25 @@
                                 </select>
                             </li>
                             <li class="z-in3">
-                                <span>类别：</span>
+                                <span>二级类目：</span>
+                                <select>
+                                    <option>请选择</option>
+                                    <option>酒水饮料</option>
+                                    <option>休闲食品</option>
+                                    <option>水果蔬菜</option>
+                                </select>
+                            </li>
+                            <li class="z-in3">
+                                <span>三级类目：</span>
+                                <select>
+                                    <option>请选择</option>
+                                    <option>酒水饮料</option>
+                                    <option>休闲食品</option>
+                                    <option>水果蔬菜</option>
+                                </select>
+                            </li>
+                            <li class="z-in3">
+                                <span>配送方式：</span>
                                 <select>
                                     <option>请选择</option>
                                     <option>酒水饮料</option>
@@ -107,15 +125,7 @@
                                 <span>价格：</span>
                                 <input type="text" name="">
                             </li>
-                            <li class="z-in3">
-                                <span>配送方式：</span>
-                                <select>
-                                    <option>请选择</option>
-                                    <option>坦克</option>
-                                    <option>三轮</option>
-                                    <option>空投</option>
-                                </select>
-                            </li>
+                            
                             <li class="z-in3">
                                 <span>搜索关键字：</span>
                                 <input type="text" name="">
@@ -125,15 +135,35 @@
                         <div class="add_img add_img1">
                             <span class="addimg_span">商品图片：</span>
                             <i>(需上传1张商品图片，比例为1:1，否则会失真)</i>
-
-                            <input type="file" multiple id="ssi-upload"/>
+                            <div class="uploader_y">
+                                <!--用来存放item-->  
+                                <div id="thelist1" class="uploader-list"></div>  
+                                
+                                <!--  <div id="filePicker1">选择图片</div>  --> 
+                                 <span id="filePicker1">选择图片</span>
+                                 <button id="ctlBtn1" class="btn btn-default">开始上传</button>  
+                             
+                            </div>  
                         </div>
                         <div class="add_img add_img2">
                             <span class="addimg_span">轮播图片：</span>
                             <i>(需上传3张轮播图片，比例为16:9，否则会失真)</i>
-
-                            <input type="file" multiple id="ssi-upload2"/>
+                            <div class="uploader_y"> 
+                                <!--用来存放item-->  
+                                <div id="thelist" class="uploader-list"></div>  
+                                 
+                                <!--  <div id="filePicker">选择图片</div>  --> 
+                                 <span id="filePicker">选择图片</span>
+                                 <button id="ctlBtn" class="btn btn-default">开始上传</button>  
+                             
+                            </div>  
                         </div>
+                        <ul>
+                            <li>
+                                <span class="top-90">使用须知：</span>
+                                <textarea rows="7" wrap="90"></textarea>
+                            </li>
+                        </ul>
                         <!-- 清空保存 -->
                         <div class="btn">
                             <input type="button" class="btn1" name="" value="清空内容">
@@ -149,10 +179,8 @@
     </div>
     <!-- 内容部分 -->
     <script src="../js/jquery-1.8.1.min.js"></script>
-    <script src="../ssi-uploader/ssi-uploader.js"></script>
+    <script type="text/javascript" src="../webuploader/webuploader.js"></script>
     <script type="text/javascript">
-        $('#ssi-upload').ssi_uploader({url:'#',maxFileSize:1,maxNumberOfFiles:1,allowed:['jpg','gif','png']});
-        $('#ssi-upload2').ssi_uploader({url:'#',maxFileSize:3,maxNumberOfFiles:3,allowed:['jpg','gif','png']});
         // 清空内容
         $(".btn .btn1").click(function () {
             $("input").val("");
@@ -160,6 +188,226 @@
             $(".btn1").val("清空内容");
             $(".btn2").val("保存");
         })
+    </script>
+    <script type="text/javascript">
+    $(function(){  
+           /*init webuploader*/  
+           var $list=$("#thelist1");   //这几个初始化全局的百度文档上没说明，好蛋疼。  
+           var $btn =$("#ctlBtn1");   //开始上传  
+           var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
+           var thumbnailHeight = 100;  
+          
+           var uploader = WebUploader.create({  
+               // 选完文件后，是否自动上传。  
+               auto: false,  
+               fileNumLimit: 1,
+              // fileSizeLimit: 200 * 1024 * 1024,    // 200 M     上传文件总大小
+              // fileSingleSizeLimit: 2 * 1024 * 1024, //   2 M    单个文件大小
+               // swf文件路径  
+               swf: '${pageContext.request.contextPath}/js/webuploader/Uploader.swf',  
+               /* fileVal: 'feedbackFiles', */
+               // 文件接收服务端。  
+               server: 'problemFeedback_saveFile.do',  
+          
+               // 选择文件的按钮。可选。  
+               // 内部根据当前运行是创建，可能是input元素，也可能是flash.  
+               pick: '#filePicker1',  
+          
+               // 只允许选择图片文件。  
+               accept: {  
+                   title: 'Images',  
+                   extensions: 'gif,jpg,jpeg,bmp,png',  
+                   mimeTypes: 'image/*'  
+               },  
+               method:'POST',  
+           });  
+           // 当有文件添加进来的时候  
+           uploader.on( 'fileQueued', function( file ) {  // webuploader事件.当选择文件后，文件被加载到文件队列中，触发该事件。等效于 uploader.onFileueued = function(file){...} ，类似js的事件定义。  
+              console.log(file);
+               var $li = $(  
+                       '<div id="' + file.id + '" class="file-item thumbnail">' +  
+                           '<img>' +  
+                           '<div class="info">' + file.name + '</div>' +  
+                       '</div>'  
+                       ),  
+                   $img = $li.find('img');  
+          
+               // $list为容器jQuery实例  
+               $list.append( $li );  
+          
+               // 创建缩略图  
+               // 如果为非图片文件，可以不用调用此方法。  
+               // thumbnailWidth x thumbnailHeight 为 100 x 100  
+               uploader.makeThumb( file, function( error, src ) {   //webuploader方法  
+                   if ( error ) {  
+                       $img.replaceWith('<span>不能预览</span>');  
+                       return;  
+                   }  
+          
+                   $img.attr( 'src', src );  
+               }, thumbnailWidth, thumbnailHeight );  
+           });  
+           // 文件上传过程中创建进度条实时显示。  
+           uploader.on( 'uploadProgress', function( file, percentage ) {  
+               var $li = $( '#'+file.id ),  
+                   $percent = $li.find('.progress span');  
+          
+               // 避免重复创建  
+               if ( !$percent.length ) {  
+                   $percent = $('<p class="progress"><span></span></p>')  
+                           .appendTo( $li )  
+                           .find('span');  
+               }  
+          
+               $percent.css( 'width', percentage * 100 + '%' );  
+           });  
+          
+           // 文件上传成功，给item添加成功class, 用样式标记上传成功。  
+           uploader.on( 'uploadSuccess', function( file,response ) {  
+               $( '#'+file.id ).addClass('upload-state-done'); 
+               var imgUrl = $('#saveFileName').val();
+               var imgUrlStr = '';
+               //取出图片地址
+               var imgUrlJS = '{"url":"'+response.url+'"}';
+               
+               var imgUrlAr = jQuery.parseJSON(imgUrl);
+             
+               imgUrlAr.push(jQuery.parseJSON(imgUrlJS));
+               imgUrlStr = imgUrlStr+","+imgUrl;
+               $('#saveFileName').val(JSON.stringify(imgUrlAr));
+           });  
+          
+           // 文件上传失败，显示上传出错。  
+           uploader.on( 'uploadError', function( file,response ) {  
+               var $li = $( '#'+file.id ),  
+                   $error = $li.find('div.error');  
+          
+               // 避免重复创建  
+               if ( !$error.length ) {  
+                   $error = $('<div class="error"></div>').appendTo( $li );  
+               }  
+          
+               $error.text('上传失败');  
+           });  
+          
+           // 完成上传完了，成功或者失败，先删除进度条。  
+           uploader.on( 'uploadComplete', function( file ) {  
+               $( '#'+file.id ).find('.progress').remove();  
+           });  
+              $btn.on( 'click', function() {  
+                uploader.upload();  
+              });  
+          });  
+    </script>
+    <script type="text/javascript">
+    $(function(){  
+           /*init webuploader*/  
+           var $list=$("#thelist");   //这几个初始化全局的百度文档上没说明，好蛋疼。  
+           var $btn =$("#ctlBtn");   //开始上传  
+           var thumbnailWidth = 100;   //缩略图高度和宽度 （单位是像素），当宽高度是0~1的时候，是按照百分比计算，具体可以看api文档  
+           var thumbnailHeight = 100;  
+          
+           var uploader = WebUploader.create({  
+               // 选完文件后，是否自动上传。  
+               auto: false,  
+               fileNumLimit: 3,
+              // fileSizeLimit: 200 * 1024 * 1024,    // 200 M     上传文件总大小
+              // fileSingleSizeLimit: 2 * 1024 * 1024, //   2 M    单个文件大小
+               // swf文件路径  
+               swf: '${pageContext.request.contextPath}/js/webuploader/Uploader.swf',  
+               /* fileVal: 'feedbackFiles', */
+               // 文件接收服务端。  
+               server: 'problemFeedback_saveFile.do',  
+          
+               // 选择文件的按钮。可选。  
+               // 内部根据当前运行是创建，可能是input元素，也可能是flash.  
+               pick: '#filePicker',  
+          
+               // 只允许选择图片文件。  
+               accept: {  
+                   title: 'Images',  
+                   extensions: 'gif,jpg,jpeg,bmp,png',  
+                   mimeTypes: 'image/*'  
+               },  
+               method:'POST',  
+           });  
+           // 当有文件添加进来的时候  
+           uploader.on( 'fileQueued', function( file ) {  // webuploader事件.当选择文件后，文件被加载到文件队列中，触发该事件。等效于 uploader.onFileueued = function(file){...} ，类似js的事件定义。  
+              console.log(file);
+               var $li = $(  
+                       '<div id="' + file.id + '" class="file-item thumbnail">' +  
+                           '<img>' +  
+                           '<div class="info">' + file.name + '</div>' +  
+                       '</div>'  
+                       ),  
+                   $img = $li.find('img');  
+          
+               // $list为容器jQuery实例  
+               $list.append( $li );  
+          
+               // 创建缩略图  
+               // 如果为非图片文件，可以不用调用此方法。  
+               // thumbnailWidth x thumbnailHeight 为 100 x 100  
+               uploader.makeThumb( file, function( error, src ) {   //webuploader方法  
+                   if ( error ) {  
+                       $img.replaceWith('<span>不能预览</span>');  
+                       return;  
+                   }  
+          
+                   $img.attr( 'src', src );  
+               }, thumbnailWidth, thumbnailHeight );  
+           });  
+           // 文件上传过程中创建进度条实时显示。  
+           uploader.on( 'uploadProgress', function( file, percentage ) {  
+               var $li = $( '#'+file.id ),  
+                   $percent = $li.find('.progress span');  
+          
+               // 避免重复创建  
+               if ( !$percent.length ) {  
+                   $percent = $('<p class="progress"><span></span></p>')  
+                           .appendTo( $li )  
+                           .find('span');  
+               }  
+          
+               $percent.css( 'width', percentage * 100 + '%' );  
+           });  
+          
+           // 文件上传成功，给item添加成功class, 用样式标记上传成功。  
+           uploader.on( 'uploadSuccess', function( file,response ) {  
+               $( '#'+file.id ).addClass('upload-state-done'); 
+               var imgUrl = $('#saveFileName').val();
+               var imgUrlStr = '';
+               //取出图片地址
+               var imgUrlJS = '{"url":"'+response.url+'"}';
+               
+               var imgUrlAr = jQuery.parseJSON(imgUrl);
+             
+               imgUrlAr.push(jQuery.parseJSON(imgUrlJS));
+               imgUrlStr = imgUrlStr+","+imgUrl;
+               $('#saveFileName').val(JSON.stringify(imgUrlAr));
+           });  
+          
+           // 文件上传失败，显示上传出错。  
+           uploader.on( 'uploadError', function( file,response ) {  
+               var $li = $( '#'+file.id ),  
+                   $error = $li.find('div.error');  
+          
+               // 避免重复创建  
+               if ( !$error.length ) {  
+                   $error = $('<div class="error"></div>').appendTo( $li );  
+               }  
+          
+               $error.text('上传失败');  
+           });  
+          
+           // 完成上传完了，成功或者失败，先删除进度条。  
+           uploader.on( 'uploadComplete', function( file ) {  
+               $( '#'+file.id ).find('.progress').remove();  
+           });  
+              $btn.on( 'click', function() {  
+                uploader.upload();  
+              });  
+          });  
     </script>
 </body>
 

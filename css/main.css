@@ -75,19 +75,19 @@ input[type="button"]{cursor: pointer;}
 .content{height: 100%;width: 100%;min-height: 700px;background-color: #fff;margin-bottom: 20px}
 /*main1*/
 .wid800{width: 800px}
-.wid800 li{float: left;margin-top: 20px;width: 50%}
+.wid800 li{margin-top: 20px;width: 100%}
 .wid800 li span{width: 100px;text-align: right;}
 .content .wid570 input[type="text"]{width: 588px}
 .content input[type="text"],.content input[type="password"]{width: 188px;border-radius: 2px;padding: 0 5px;height: 28px;line-height: 28px;}
 .content select{width: 190px;border-radius: 2px;padding: 0 5px;height: 28px;line-height: 28px;}
-.content select{width: 200px;padding: 0;height: 30px;line-height: 30px;border-radius: 2px}
+.content select{min-width: 200px;padding: 0;height: 30px;line-height: 30px;border-radius: 2px}
 .content .z-in3{background: url(../img/index_load.png) no-repeat 251px -29px;}
 .content .wid570{width: 100%;background-position: 651px -29px;}
 .content .wid570 textarea{width: 600px}
 .content .z-in3 i{margin-left: 15px;font-size: 12px;font-style: normal;}
-.add_img{padding-top: 10px;}
+.add_img{padding-top: 10px;height: 210px}
 .add_img .addimg_span{height: 30px;line-height: 30px;width: 100px;text-align: right;}
-.add_img i{margin-left: 115px;font-family: 'simsun';font-size: 12px;font-style: normal;}
+.add_img i{margin-left: 0px;font-family: 'simsun';font-size: 12px;font-style: normal;}
 .btn{width: 800px;text-align: center;}
 .btn input,.btn a{width: 85px;height: 34px;background-color: #ea2e49;color: #fff;margin: 0 20px;line-height: 34px;border: 0;border-radius: 2px}
 .btn .btn1{background-color: #7f7f7f;}
@@ -97,7 +97,7 @@ input[type="button"]{cursor: pointer;}
 .wid85 li span{width: 100px;text-align: right;}
 .content .search{width: 83px;height: 30px;background-color: #ea2e49;color: #fff;position: absolute;bottom: 15px;border: 0;right: 50px;line-height: 30px;border-radius: 2px;text-align: center;}
 .wid1100_input{position: relative;background-color: #fff;}
-.wid1100_bar{padding-left: 30px;}
+.wid1100_bar{padding-left: 30px;margin-bottom: 15px;}
 .wid1100_bar input[type="button"]{width: 68px;height: 33px;background-color: #f0f0f0;margin-left: 30px;border: 1px solid #dcdcdc;}
 .longdl{width: 97%;margin: 0px auto 25px;min-width: 1060px}
 .longdl dt{background-color: #f5f5f5;line-height: 40px;padding-left: 10px;border: 1px solid #e5e5e5;border-bottom: 0;position: relative;}
@@ -138,7 +138,7 @@ input[type="button"]{cursor: pointer;}
 .save_window a{position: absolute;top: -12px;right: -13px;width: 25px;height: 25px;color: #fff;background-color: #777777;line-height: 22px;text-align: center;font-size: 21px;border-radius: 15px}
 .save_window .window_li2 span{color: #4096f7}
 .longdl dd li u{color: #f6c347}
-.apply .wid1100_bar{padding-top: 25px;}
+.apply .wid1100_bar{padding-top: 15px;}
 .content41_add .wid800 li{width: 100%}
 .wid800 li label span{width: auto;margin-right: 15px;}
 .content .longdl td input[type="text"]{height: 22px;width: 60px;background-color: #fff;border-color: #dcdcdc;line-height: 24px;}
@@ -257,7 +257,7 @@ hr{border-color: #bfbfbf;margin-bottom: 30px;}
 .wid650_input{width: 500px;text-align: center;margin-top: 20px;}
 .wid650_input input,.wid650_input a{width: 83px;height: 28px;border: 0;margin: 0 10px;line-height: 28px;text-align: center;border-radius: 2px}
 .back{background-color: #dadada;color: #717171}
-input.save[type="button"]{background-color: #ea2e49;color: #fff}
+input.save[type="button"],a.save{background-color: #ea2e49;color: #fff}
 .areaspan{position: relative;top: -70px}
 .add_example2 textarea{padding: 5px}
 .tree{height: 300px;overflow: auto;padding-left: 75px;width: 500px}
@@ -325,7 +325,7 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .index_dd li a:hover{text-decoration: underline;}
 /*default_add*/
 .bgc_f5{background-color: #f5f5f5;}
-.deadd_bar{margin-top: 20px;background-color: #fff;padding: 20px}
+.deadd_bar{margin: 15px 0;background-color: #fff;padding: 20px}
 .add_bar1{text-align: center;line-height: 20px;color: #757575;width: 215px;}
 .add_bar2{padding-left: 40px;width: 800px;border-left: 1px solid #dcdcdc;min-height: 185px}
 .add_bar2 li{position: relative;border-bottom: 1px solid #d1d1d1;padding: 10px 0}
@@ -336,18 +336,18 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .add_bar2 li .add_hold4{position: absolute;right: 20px;bottom: 10px}
 .title span{color: #769ffc;margin-left: 10px;}
 .open_window textarea{width: 95%;margin: 15px 2.5% 10px}
-.apply{background-color: #fff;padding-top: 25px;margin-top: 25px;}
+.apply{background-color: #fff;padding-top: 15px;}
 .bgc_f5 .width100{width: 100%;padding: 25px 10px}
 .content_main3 .add_bar2{border: 0;padding-left: 0;width: 100%}
 .content_main5{padding-top: 25px}
 /*上传图片*/
-
-
-
-
-
-
-
+.uploader_y{margin-top: -26px;margin-left: 104px;position: relative;}
+.thumbnail{float: left;width: 150px;text-align: center;margin-right: 20px}
+.uploader-list{margin-top: 30px;height: 130px}
+.info{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.btn-default{width: 86px;height: 39px;background-color: #00b7ee;color: #fff;border-radius: 4px;position: absolute;left: 100px}
+/*修改main1*/
+.wid800 textarea{width: 600px}
 
 
 
