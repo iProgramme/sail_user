@@ -44,7 +44,7 @@ input[type="button"]{cursor: pointer;}
 /*common*/
 .main_head{height: 30px;background-color: #ea2e49;width: 100%;text-align: left;}
 .main_head .wid1225{background-color: #ea2e49;text-align: right;}
-.wid1225{width: 1225px;margin: 0 auto;position: relative;left: 50%;margin-left: -613px;}
+.wid1225{width: 1225px;margin: 0 auto;position: relative\9;left: 50%\9;margin-left: -613px\9;}
 .main_head a{padding-left: 30px;margin-left: 10px;border-left: 1px solid #faa393;color: #fff;height: 30px;line-height: 30px;font-family: 'simsun';background: url(../img/index_load.png) no-repeat -43px -101px;}
 .main_head .out{background-position: -43px -136px;}
 .tabs{width: 125px}
@@ -203,7 +203,7 @@ input[type="button"]{cursor: pointer;}
 .add_money{color: #000;padding-left: 28px;background: url(../img/index_load.png) no-repeat -112px -98px;margin-left: 2%;height: 46px;line-height: 46px;}
 .add_money:hover{text-decoration: underline;}
 .add_example2 li{padding: 10px 0}
-.add_example2 li span{min-width: 70px;text-align: right;}
+.add_example2 li .grey{min-width: 70px;text-align: right;}
 .add_example2 li label span{text-align: left;}
 .add_example2 li input[type="text"],.add_example4 .wid270 input[type="text"]{width: 270px}
 .add_example2 li select{width: 91px}
@@ -340,7 +340,7 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .bgc_f5 .width100{width: 100%;padding: 25px 10px}
 .content_main3 .add_bar2{border: 0;padding-left: 0;width: 100%}
 .content_main5{padding-top: 25px}
-
+/*上传图片*/
 
 
 
