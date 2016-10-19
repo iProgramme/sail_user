@@ -87,7 +87,8 @@ input[type="button"]{cursor: pointer;}
 .content .z-in3 i{margin-left: 15px;font-size: 12px;font-style: normal;}
 .add_img{padding-top: 10px;height: 210px}
 .add_img .addimg_span{height: 30px;line-height: 30px;width: 100px;text-align: right;}
-.add_img i{margin-left: 0px;font-family: 'simsun';font-size: 12px;font-style: normal;}
+.add_img i{margin-left: 110px;font-family: 'simsun';font-size: 12px;position: relative;top: 183px;left: 90px}
+.add_img .uploader_y i{top: -15px;left: 0}
 .btn{width: 800px;text-align: center;}
 .btn input,.btn a{width: 85px;height: 34px;background-color: #ea2e49;color: #fff;margin: 0 20px;line-height: 34px;border: 0;border-radius: 2px}
 .btn .btn1{background-color: #7f7f7f;}
@@ -140,7 +141,7 @@ input[type="button"]{cursor: pointer;}
 .longdl dd li u{color: #f6c347}
 .apply .wid1100_bar{padding-top: 15px;}
 .content41_add .wid800 li{width: 100%}
-.wid800 li label span{width: auto;margin-right: 15px;}
+.wid800 li label span{width: auto;margin-right: 15px;min-width: auto}
 .content .longdl td input[type="text"]{height: 22px;width: 60px;background-color: #fff;border-color: #dcdcdc;line-height: 24px;}
 /*main5*/
 .longdl dt span{min-width: 180px;padding-right: 20px;}
@@ -343,7 +344,7 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 /*上传图片*/
 .uploader_y{margin-top: -26px;margin-left: 104px;position: relative;}
 .thumbnail{float: left;width: 150px;text-align: center;margin-right: 20px}
-.uploader-list{margin-top: 30px;height: 130px}
+.uploader-list{margin-top: 30px;height: 145px}
 .info{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
 .btn-default{width: 86px;height: 39px;background-color: #00b7ee;color: #fff;border-radius: 4px;position: absolute;left: 100px}
 /*修改main1*/
@@ -361,10 +362,10 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .sailset tbody td{border-top: 1px solid #bfbfbf;text-align: center;height: 45px}
 .sailset tr:nth-child(2) td{border: 0}
 .full{height: 100%;line-height: 46px;}
-.ss_uploader_y .webuploader-container{left: 130px;top: -100px}
+.ss_uploader_y .webuploader-container{left: 130px;top: -115px}
 .ss_uploader_y{margin-top: -50px;height: 130px}
 .ss_uploader_y .btn-default{left: 260px;top: 30px}
-.ss_uploader_y .ss_i{position: relative;top: -115px;left: 250px;font-size: 12px;font-family: 'simsun';}
+.ss_uploader_y .ss_i{position: relative;top: -130px;left: 250px;font-size: 12px;font-family: 'simsun';}
 .full a{width: 86px;height: 23px;background-color: #fff;color: #fff;border-radius: 2px;font-family: 'simsun';line-height: 23px;}
 .full a:hover{background-color: #f3f9ed;color: #000;height: 21px;border: 1px solid #b5d79a;width: 84px}
 .full .ss_moren{background-color: #f5c545;}
@@ -396,8 +397,8 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .ss_article p{display: inline-block;position: relative;font-family: 'simsun';font-size: 12px;}
 .ss_article p i{position: absolute;font-family: 'simsun';font-size: 12px;}
 .ss_article p span{padding-left: 20px;font-family: 'simsun';font-size: 12px;}
-
-
+.wid800 .btn{margin-top: 20px;}
+.wid800 .uploader_y .btn{margin-top: 0px;}
 
 
 
