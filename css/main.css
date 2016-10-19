@@ -67,14 +67,14 @@ input[type="button"]{cursor: pointer;}
 .tabs .tabs_dt11{background-position: 0px -517px;}
 .tabs .tabs_dt12{background-position: 0px -570px;}
 .tabs dt a{color: #000}
-.content_right{width: 1100px;}
+.content_right{width: 1100px}
 .content_right2{width: 100%}
 .bread{height: 50px;line-height: 50px;}
 .bread li{float: left;padding-left: 25px;color: #535353;background: url(../img/index_load.png) no-repeat 7px -126px;}
 .bread .bread_first{background: none;padding-left: 0;}
-.content{height: 100%;width: 100%;min-height: 700px;background-color: #fff;margin-bottom: 20px}
+.content{height: 100%;width: 100%;min-height: 700px;background-color: #fff;margin-bottom: 20px;padding-bottom: 20px;}
 /*main1*/
-.wid800{width: 800px}
+.wid800{width: 800px;}
 .wid800 li{margin-top: 20px;width: 100%}
 .wid800 li span{min-width: 100px;text-align: right;}
 .content .wid570 input[type="text"]{width: 588px}
@@ -350,6 +350,7 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .wid800 textarea{width: 600px}
 .width100{width: 100%}
 /*manage2*/
+.twoline{position: relative;z-index: 5;}
 .twoline input{margin-left: 104px;margin-top: 20px;}
 .content .wid570 .twoline input[type="text"]{width: 800px}
 .content .bgnone,.content .twoline{background: none;}
@@ -364,25 +365,37 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .ss_uploader_y{margin-top: -50px;height: 130px}
 .ss_uploader_y .btn-default{left: 260px;top: 30px}
 .ss_uploader_y .ss_i{position: relative;top: -115px;left: 250px;font-size: 12px;font-family: 'simsun';}
-.full a{width: 74px;height: 23px;background-color: #fff;color: #fff;border-radius: 2px;font-family: 'simsun';line-height: 23px;}
-.full a:hover{background-color: #f3f9ed;color: #000;height: 21px;border: 1px solid #b5d79a;width: 72px}
+.full a{width: 86px;height: 23px;background-color: #fff;color: #fff;border-radius: 2px;font-family: 'simsun';line-height: 23px;}
+.full a:hover{background-color: #f3f9ed;color: #000;height: 21px;border: 1px solid #b5d79a;width: 84px}
 .full .ss_moren{background-color: #f5c545;}
-.full .ss_moren:hover{background-color: #f5c545;;color: #fff;height: 23px;border: 0;width: 74px}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.full .ss_moren:hover{background-color: #f5c545;;color: #fff;height: 23px;border: 0;width: 86px}
+.content .twoline input[type="text"]{width: 800px}
+/*manage2弹窗*/
+.wid970{width: 970px;left: calc(50% - 485px)}
+.open_window li input[type="radio"],.open_window li input[type="checkbox"]{width: 20px;position: relative;top: 5px;margin-right: 10px;}
+.ss_sentway{position: relative;top: -43px;left: 50px}
+.ss_sentway dd{padding-left: 30px;width: 130px}
+.open_window .close_window a{min-width: 64px;padding: 0px 10px;height: 28px;line-height: 28px;text-align: center;border-radius: 2px;margin: 0 10px}
+.close_window{position: absolute;left: 85px;bottom: 20px}
+/*manage2鼠标滑过的栏目*/
+.tier{position: absolute;width: 540px}
+.tier ul{position: relative;left: 230px;top: -270px;padding-top: 0}
+.tier li{position: absolute;height: 30px;overflow: visible;}
+.tier1{top: 0px}
+.tier2{top: 32px}
+.tier3{top: 64px}
+.tier4{top: 0px}
+.tier5{top: 0px}
+.tier6{top: 0px}
+.triangle-left{width: 0;height: 0;border-bottom: 10px solid transparent;border-top: 10px solid transparent;border-right: 10px solid #bfbfbf;position: absolute;top: 6px;left: 1px;z-index: 5;}
+.triangle-left2{width: 0;height: 0;border-bottom: 10px solid transparent;border-top: 10px solid transparent;border-right: 10px solid #fff;position: absolute;left: 1px;top: -10px}
+.border1_bf{border: 1px solid #bfbfbf;margin-left: 10px;padding:5px;background-color: #fff;min-height: 20px;cursor: default;}
+.pos_center{height: 300px;top: -134px;position: relative;display: table-cell;vertical-align: middle;}
+.tier .tier_ul2{top: -135px}
+.ss_article{line-height: 16px;}
+.ss_article p{display: inline-block;position: relative;font-family: 'simsun';font-size: 12px;}
+.ss_article p i{position: absolute;font-family: 'simsun';font-size: 12px;}
+.ss_article p span{padding-left: 20px;font-family: 'simsun';font-size: 12px;}
 
 
 

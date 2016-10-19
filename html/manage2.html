@@ -101,30 +101,34 @@
                             <li class="z-in3 twoline">
                                 <span>经营地址：</span>
                                 <select>
+                                    <option>请选择</option>
                                     <option>广东</option>
                                     <option>酒水饮料</option>
                                     <option>休闲食品</option>
                                     <option>水果蔬菜</option>
                                 </select>
                                 <select>
+                                    <option>请选择</option>
                                     <option>广州</option>
                                     <option>酒水饮料</option>
                                     <option>休闲食品</option>
                                     <option>水果蔬菜</option>
                                 </select>
                                 <select>
+                                    <option>请选择</option>
                                     <option>体育西路</option>
                                     <option>酒水饮料</option>
                                     <option>休闲食品</option>
                                     <option>水果蔬菜</option>
                                 </select>
                                 <select>
+                                    <option>请选择</option>
                                     <option>海底捞</option>
                                     <option>酒水饮料</option>
                                     <option>休闲食品</option>
                                     <option>水果蔬菜</option>
                                 </select>
-                                <input type="text" name="">
+                                <input type="text" name="" placeholder="详细地址">
                             </li>
                             <li>
                                 <span>营业时间：</span>
@@ -220,15 +224,15 @@
                             <li>
                                 <span>提供订餐：</span>
                                 <label><input type="radio" name="dingcan"><i>是</i></label>
-                                <label><input type="radio" name="dingcan" checked=""><i>否</i></label>
+                                <label><input type="radio" name="dingcan" checked><i>否</i></label>
                             </li>
-                            <li>
+                            <li class="open_list disN">
                               <span>订餐类型：</span>
                               <select>
                                 <option>早餐</option>
                               </select>
                             </li>
-                            <li>
+                            <li class="open_list disN">
                               <span>供应时间：</span>
                               <select>
                                 <option>0：00</option>
@@ -286,13 +290,13 @@
                                     <option>24：00</option>
                               </select>
                             </li>
-                            <li>
+                            <li class="open_list disN">
                               <span>配送方式：</span>
                               <a href="javascript:void(0)" class="add_money">新增运费模板</a>
 
                             </li>
                         </ul>
-                        <div class="sailset">
+                        <div class="sailset disN">
                             
                             <table>
                               <thead>
@@ -351,6 +355,145 @@
         <!-- 右侧内容 -->
     </div>
     <!-- 内容部分 -->
+    <!-- 弹窗 -->
+    <div class="bg000 disN">
+      <div class="open_window wid970">
+        <p class="title">新增配送方式<a href="javascript:void(0)"></a></p>
+        <ul>
+          <li>
+            <span>配送方式：</span>
+            <dl class="ss_sentway">
+              <dt><label><input type="checkbox" name="ss_checkbox_way"><span>商家配送</span></label></dt>
+              <dd><label><input type="radio" name="ss_checkbox_way2"><span>只能预约明天</span></label></dd>
+              <dd><label><input type="radio" name="ss_checkbox_way2"><span>提供预约明天</span></label></dd>
+              <dd><label><input type="radio" name="ss_checkbox_way2"><span>仅供当天</span></label></dd>
+            </dl>
+            <dl class="ss_sentway">
+              <dt><label><input type="checkbox" name="ss_checkbox_way"><span>到店自提</span></label></dt>
+              <dd><label><input type="radio" name="ss_checkbox_way3"><span>只能预约明天</span></label></dd>
+              <dd><label><input type="radio" name="ss_checkbox_way3"><span>提供预约明天</span></label></dd>
+              <dd><label><input type="radio" name="ss_checkbox_way3"><span>仅供当天</span></label></dd>
+            </dl>
+          </li>
+        </ul>
+        <div class="close_window">
+          <a href="javascript:void(0)" class="save">保存并返回</a>
+          <a href="javascript:void(0)" class="back">返回</a>
+        </div>
+        <!-- 很烦人的那个鼠标滑过框 -->
+        <div class="tier">
+          <ul class="tier_ul1">
+            <li class="tier1 disN">
+              <div class="triangle-left"><div class="triangle-left2"></div></div>
+              <div class="pos_center">
+                <div class="border1_bf">
+                  <div class="ss_article">
+                    <p>假设当营业时间为9:00-21：00时，</p>
+                    <p>前一天营业结束时间后至当天营业结束时间前下单（前一天21：00~当天21：00），用户自提时间是第二天的供应时间</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="tier2 disN">
+              <div class="triangle-left"><div class="triangle-left2"></div></div>
+              <div class="pos_center">
+                <div class="border1_bf">
+                  <div class="ss_article">
+                    <p>假设当营业时间为9:00-21：00，供应时间为6:00-9:00,时，</p>
+                    <p>
+                      <i>1.</i>
+                      <span>前一天的营业结束时间后至当天供应截止时间前下单（前一天21：00-当天9：00），用户自提时间为当天的供应时间</span>
+                    </p>
+                    <p>
+                      <i>2.</i>
+                      <span>当天供应截止时间后至营业结束时间前下单（9：00~21：00），用户自提时间为第二天的供应时间</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="tier3 disN">
+              <div class="triangle-left"><div class="triangle-left2"></div></div>
+              <div class="pos_center">
+                <div class="border1_bf">
+                  <div class="ss_article">
+                    <p>假设当供应时间为6:00-9:00,时，</p>
+                    <p>
+                      <i>1.</i>
+                      <span>当天供应截止时间前下单（00：00~9：00），用户自提时间为当天的供应时间</span>
+                    </p>
+                    <p>
+                      <i>2.</i>
+                      <span>当天供应截止时间后（9：00~24：00），用户将无法下单</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="tier_ul2">
+            <li class="tier1 disN">
+              <div class="triangle-left"><div class="triangle-left2"></div></div>
+              <div class="pos_center">
+                <div class="border1_bf">
+                  <div class="ss_article">
+                    <p>假设当营业时间为9:00-21：00时，</p>
+                    <p>前一天营业结束时间后至当天营业结束时间前下单（前一天21：00-当天21：00），送达时间为第二天供应开始时间加配送时间</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="tier2 disN">
+              <div class="triangle-left"><div class="triangle-left2"></div></div>
+              <div class="pos_center">
+                <div class="border1_bf">
+                  <div class="ss_article">
+                    <p>假设当营业时间为9:00-21：00，供应时间为6:00-9:00,时，</p>
+                    <p>
+                      <i>1.</i>
+                      <span>前一天营业结束时间至当天供应开始时间前下单（前一天21：00-当天6：00），送达时间为当天供应开始时间加配送时间</span>
+                    </p>
+                    <p>
+                      <i>2.</i>
+                      <span>当天供应时间内下单（6：00~9：00），送达时间为下单时间加配送时间</span>
+                    </p>
+                    <p>
+                      <i>3.</i>
+                      <span>当天供应截止时间后至营业结束时间前下单（9：00~21：00），送达时间为第二天供应开始时间加配送时间</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="tier3 disN">
+              <div class="triangle-left"><div class="triangle-left2"></div></div>
+              <div class="pos_center">
+                <div class="border1_bf">
+                  <div class="ss_article">
+                    <p>假设当供应时间为6:00-9:00,时，</p>
+                    <p>
+                      <i>1.</i>
+                      <span>当天供应开始时间前下单（00：00~6：00），送达时间为当天供应开始时间加配送时间</span>
+                    </p>
+                    <p>
+                      <i>2.</i>
+                      <span>当天供应时间内下单（6：00~9：00），送达时间为下单时间加配送时间</span>
+                    </p>
+                    <p>
+                      <i>3.</i>
+                      <span>当天供应截止时间后（9：00~24：00），用户将无法下单</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- 很烦人的那个鼠标滑过框 -->
+        
+      </div>
+    </div>  
+    <!-- 弹窗 -->
     <script src="../js/jquery-1.8.1.min.js"></script>
     <script type="text/javascript" src="../webuploader/webuploader.js"></script>
     <script type="text/javascript">
@@ -361,7 +504,41 @@
             $(".btn1").val("清空内容");
             $(".btn2").val("保存");
         })
+
+        // 提供订餐
+        $("input[name='dingcan']").click(function () {
+          var dingcan=$(this).parents('label').index();
+          if (dingcan==1) {
+            $(".open_list").show()
+          }else{
+            $(".open_list").hide();
+          }
+        })
+        // 打开弹窗
+        $(".add_money").click(function () {
+          $(".bg000").show()
+        })
+        // 关闭弹窗
+        $(".back,.title a").click(function () {
+          $(".bg000").hide()
+        })
+        // 保存并返回
+        $(".save").click(function () {
+          $(".bg000").hide();
+          $(".sailset").show()
+        })
+
+        // 弹出框内容的鼠标滑过效果
+        $(".ss_sentway dd").hover(function () {
+          var parents=$(this).parents('.ss_sentway').index()-1,
+              child=$(this).index()-1;
+          $(".tier ul").eq(parents).children('li').eq(child).show()
+        },function () {
+          $(".tier ul li").hide()
+        })
     </script>
+
+    <!-- 上传图片 -->
     <script type="text/javascript">
     $(function(){  
            /*init webuploader*/  
