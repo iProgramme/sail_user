@@ -132,14 +132,31 @@
                         <i>除指定地点外，其余地点的运费才有“默认运费”</i>
                         <p>
                             <label>
-                                <input type="radio" name="yunsong" checked><span>制定派发</span>
+                                <input type="radio" name="yunsong" ><span>指定派发</span>
                             </label>
+                        </p>
+                        <div class="open_pay disN">
+                            <span>默认运费：</span>
+                            <input type="text" name="">
+                            <span>件内，</span>
+                            <input type="text" name="">
+                            <span>元， 每增加：</span>
+                            <input type="text" name="">
+                            <span>件， 增加运费：</span>
+                            <input type="text" name="">
+                            <span>元</span>
+                        </div>
+                        <p>
                             <label>
-                                <input type="radio" name="yunsong"><span>专送</span>
+                                <input type="radio" name="yunsong" checked><span>专送</span>
                             </label>
+                        </p>
+                        <p>
                             <label>
                                 <input type="radio" name="yunsong"><span>快递派发</span>
                             </label>
+                        </p>
+                        <p>
                             <label>
                                 <input type="radio" name="yunsong"><span>店家派发</span>
                             </label>
@@ -148,6 +165,69 @@
                     </li>
                 </ul>
                 <hr>
+                <div class="postal_rates">
+                    <div class="rates_sel">
+                        <label>
+                            <input type="checkbox" name=""><span>&nbsp;&nbsp;&nbsp;&nbsp;指定包邮可选</span>
+                        </label>
+                    </div>
+                    <div class="rates_table">
+                        <table>
+                            <tr>
+                                <th>选择学校</th>
+                                <th>选择运送方式</th>
+                                <th>选择快递</th>
+                                <th>设置包邮条件</th>
+                                <th>操作</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="add_sch">未添加学校</span>
+                                    <a href="javascript:void(0)" class="change_sch">编辑</a>
+                                </td>
+                                <td>
+                                    <select>
+                                        <option>请选择</option>
+                                        <option>飞机</option>
+                                        <option>火车</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    <select>
+                                        <option>件数</option>
+                                        <option>金额</option>
+                                        <option>件数+金额</option>
+                                    </select>
+                                    <div class="condition">
+                                        <span>满</span>
+                                        <input type="text" name="">
+                                        <span>件包邮</span>
+                                    </div>
+                                    <div class="condition disN">
+                                        <span>满</span>
+                                        <input type="text" name="">
+                                        <span>元包邮</span>
+                                    </div>
+                                    <div class="condition disN">
+                                        <span>满</span>
+                                        <input type="text" name="">
+                                        <span>件，</span>
+                                        <input type="text" name="">
+                                        <span>元以上包邮</span>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0)" class="add_know">+</a>
+                                    <a href="javascript:void(0)" class="td_delect">×</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
                 <div class="center_btn">
                     <a href="main9.html" class="save_back1">保存并返回</a>
                     <a href="main9.html" class="cancel">取消</a>
@@ -168,7 +248,21 @@
         laydate({
             elem: '#J-xl'
         });
-        
+    </script>
+    <script type="text/javascript">
+        // 点击展开单选框的浮层
+        $(".add_example2 p input[type=radio]").click(function () {
+            $('.open_pay').hide();
+            $(this).parents('p').next('.open_pay').show()
+        })
+        // 点击展开下面部分的复选框的浮层
+        $(".rates_sel input").click(function() {
+            $(".rates_table").toggle()
+        });
+        // 点击切换表格里面的收费模式
+        $(".rates_table td select").click(function() {
+            alert($(this).text())
+        });
     </script>
 </body>
 

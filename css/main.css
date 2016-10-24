@@ -159,7 +159,7 @@ input[type="button"]{cursor: pointer;}
 .longdl table input{height: 24px;width: 72px;background-color: #f0f0f0;border-color: #dcdcdc}
 .longdl table .save{background-color: #75b6ff;color: #fff;width: 60px}
 /*时间*/
-#J-xl,#J-xl2{background: url(../img/time.png) no-repeat 176px 5px;}
+#J-xl,#J-xl2,#J-xl3, #J-xl4,#J-xl5, #J-xl6{background: url(../img/time.png) no-repeat 176px 5px;}
 .wid1100_bar p .fl{min-width: 150px;text-align: center;}
 .wid1100_bar p .fr{width: 115px;text-align: center;}
 .wid1100_barP{padding-left: 0px;margin-left: 1.5%;margin-right: 1.5%;}
@@ -216,7 +216,7 @@ input[type="radio"],.add_example2 li label{margin-right: 10px;}
 .add_example2 li span{min-width: 70px;text-align: right;}
 .center_btn{text-align: center;}
 .center_btn input,.center_btn a{height: 25px;border: 1px solid #bfbfbf;background-color: #eee;margin: 0 10px;padding: 0 10px;line-height: 25px;text-align: center;border-radius: 2px;color: #717171}
-hr{border-color: #bfbfbf;margin-bottom: 30px;}
+hr{border-color: #bfbfbf;margin-bottom: 20px;}
 /*main10*/
 .add_exampleP{display: inline-block;}
 .add_address{height: 25px;border: 1px solid #afd498;background-color: #f1f7ec;padding: 0 5px;}
@@ -418,18 +418,21 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .main11_all .apply th:last-child{border: 0}
 .main11_all .apply td{height: 40px;border-bottom: 1px solid #cfcfcf}
 .main11_all .apply table input[type="checkbox"]{margin: 0 5px}
-
-
-
-
-
-
-
-
-
-
-
-
+/*main9_add*/
+.add_example2 li .open_pay input[type="text"]{width: 60px;height: 16px;padding:0 10px;border-color: #b5ccff;line-height: 16px}
+.open_pay{padding: 18px 5px;border: 1px solid #b5ccff;position: relative;width: 780px;margin-left: 95px;text-align: center;}
+.add_example2 li .open_pay span{min-width: auto}
+.add_example2 li p label{display: block;}
+.postal_rates{margin-bottom: 20px;}
+.rates_table table{width: 100%;margin: 10px 0}
+.rates_table td,.rates_table th{border: 1px solid #d2d2d2;text-align: center;}
+.rates_table td{padding: 10px 0;line-height: 30px;}
+.rates_table th{height: 23px;background-color: #f0f0f0;}
+.content .rates_table select,.content .rates_table input[type="text"]{min-width: auto;width: auto;border-color: #b5ccff;height: 18px;line-height: 18px;}
+.content .rates_table select{height: 20px;line-height: 20px;}
+.change_sch{background-color: #cdddff;border: 1px solid #b5ccff;padding: 0 5px;line-height: 20px;}
+.add_sch{width: 100%}
+.content .rates_table input[type="text"]{width: 40px}
 
 
 
