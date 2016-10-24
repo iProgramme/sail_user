@@ -98,9 +98,9 @@ input[type="button"]{cursor: pointer;}
 .wid85 li span{width: 100px;text-align: right;}
 .content .search{width: 83px;height: 30px;background-color: #ea2e49;color: #fff;position: absolute;bottom: 15px;border: 0;right: 50px;line-height: 30px;border-radius: 2px;text-align: center;}
 .wid1100_input{position: relative;background-color: #fff;}
-.wid1100_bar{padding-left: 30px;margin-bottom: 15px;}
+.wid1100_bar{padding-left: 30px;margin-bottom: 0px;}
 .wid1100_bar input[type="button"]{width: 68px;height: 33px;background-color: #f0f0f0;margin-left: 30px;border: 1px solid #dcdcdc;}
-.longdl{width: 97%;margin: 0px auto 25px;min-width: 1060px}
+.longdl{width: 97%;margin: 15px auto 25px;min-width: 1060px}
 .longdl dt{background-color: #f5f5f5;line-height: 40px;padding-left: 10px;border: 1px solid #e5e5e5;border-bottom: 0;position: relative;}
 .longdl dd{position: relative;min-height: 126px;border: 1px solid #e5e5e5;border-top: 0;background-color: #fff;}
 .longdl dd img{position: relative;width: 100px;height: 100px;top: 15px;left: 15px}
@@ -213,6 +213,7 @@ input[type="radio"],.add_example2 li label{margin-right: 10px;}
 .add_example2 i{font-size: 12px;color: #777}
 .add_example2 p label{display: block;line-height: 30px;}
 .add_example2 p{padding-left: 73px;padding-top: 10px;}
+.add_example2 li span{min-width: 70px;text-align: right;}
 .center_btn{text-align: center;}
 .center_btn input,.center_btn a{height: 25px;border: 1px solid #bfbfbf;background-color: #eee;margin: 0 10px;padding: 0 10px;line-height: 25px;text-align: center;border-radius: 2px;color: #717171}
 hr{border-color: #bfbfbf;margin-bottom: 30px;}
@@ -340,7 +341,7 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .apply{background-color: #fff;padding-top: 15px;}
 .bgc_f5 .width100{width: 100%;padding: 25px 10px}
 .content_main3 .add_bar2{border: 0;padding-left: 0;width: 100%}
-.content_main5{padding-top: 25px}
+.content_main6{padding-top: 25px}
 /*上传图片*/
 .uploader_y{margin-top: -26px;margin-left: 104px;position: relative;}
 .thumbnail{float: left;width: 150px;text-align: center;margin-right: 20px}
@@ -411,6 +412,16 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .tac{text-align: center;}
 .wid100_input{text-align: center;width: 100%}
 .mar_r10{margin-right: 10px;}
+/*main11*/
+.main11_all .apply table{width: 1050px;margin-left: 25px;text-align: center;}
+.main11_all .apply th{height: 44px;border-right: 1px solid #cfcfcf;background-color: #f3f2f2;}
+.main11_all .apply th:last-child{border: 0}
+.main11_all .apply td{height: 40px;border-bottom: 1px solid #cfcfcf}
+.main11_all .apply table input[type="checkbox"]{margin: 0 5px}
+
+
+
+
 
 
 
