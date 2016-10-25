@@ -433,11 +433,12 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .change_sch{background-color: #cdddff;border: 1px solid #b5ccff;padding: 0 5px;line-height: 20px;}
 .add_sch{width: 100%}
 .content .rates_table input[type="text"]{width: 40px}
-
-
-
-
-
+/*改细节*/
+.tabs dl{padding-bottom: 40px;}
+/*main23*/
+.howl1{padding:35px 0px 20px 0px;border-bottom: 1px dashed #dcdcdc;margin: 0 35px}
+.howl a{position: relative;;top: -19px;left: 20px;width: 100px;height: 23px;border: 1px solid #dcdcdc;text-align: center;line-height: 23px;color: #000;background-color: #eeeeee;}
+.howl2{padding: 15px 35px}
 
 
 
