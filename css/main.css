@@ -181,7 +181,7 @@ input[type="button"]{cursor: pointer;}
 .person_info2 .menu_li7{background-position: -250px 52px;}
 .person_info2 .menu_li9{background-position: -332px 49px;}
 .person_info2 span{float: left;width: 100%;font-size: 12px;margin-top: 100px;}
-.content_main2 .longdl dt span{width: 250px}
+.content_main2 .longdl dt span{min-width: 250px}
 .content_main2 dt p{width: 99.3%;border-top: 1px solid #dcdcdc;}
 .longdl dd table .bor_td{border-top: 1px solid #dcdcdc}
 /*弹窗*/
