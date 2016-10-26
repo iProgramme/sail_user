@@ -184,6 +184,55 @@
                                 <td>
                                     <span class="add_sch">未添加学校</span>
                                     <a href="javascript:void(0)" class="change_sch">编辑</a>
+                                    <div class="school disN">
+                                        <p>选择学校 <a href="javascript:void(0)" class="close"></a></p>
+                                        <ul class="clear">
+                                            <li><label><input type="checkbox" name=""><span>太原理工大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>华南理工大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>东北理工大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>清华大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>北京大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>南京大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>山西大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>财经大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                            <li><label><input type="checkbox" name=""><span>贸易大学</span></label></li>
+                                        </ul>
+                                        <div class="sch_btn"><input type="button" name="" value="确定" class="sure"></div>
+                                    </div>
                                 </td>
                                 <td>
                                     <select>
@@ -263,6 +312,13 @@
         $(".rates_table td select").change(function() {
             alert($(this).text())
         });
+        // 选择学校
+        $(".change_sch").click(function() {
+            $(".school").show()
+        });
+        $(".colse,.sure").click(function () {
+            $(".school").hide()
+        })
     </script>
 </body>
 

@@ -188,7 +188,7 @@ input[type="button"]{cursor: pointer;}
 .bg000{background-color: rgba(0,0,0,0.4);width: 100%;height: 100%;position: fixed;top: 0;z-index: 20;}
 .open_window{width: 640px;position: fixed;left: calc(50% - 320px);left: 50%\9;margin-left: -320px\9;top: 100px;box-shadow: 10px 10px 10px rgba(0,0,0,0.5);background-color: #fff;border: 1px solid rgba(0,0,0,0.6);border-radius: 2px;padding-bottom: 20px;border-color: #000\9}
 .title{height: 35px;line-height: 35px;background-color: #f6f6f6;border-top-left-radius: 10px;border-top-right-radius: 10px;padding: 0 15px;position: relative;}
-.title a{width: 18px;height: 18px;position: absolute;background: url(../img/index_load.png) no-repeat -115px -143px;top: 10px;right: 10px}
+.title a,.school p a{width: 18px;height: 18px;position: absolute;background: url(../img/index_load.png) no-repeat -115px -143px;top: 10px;right: 10px}
 .open_window ul{padding-left: 15px;line-height: 35px;padding-top: 15px;}
 .open_window select{border-radius: 2px;height: 30px;border: 1px solid #8c8c8c}
 .open_input{padding-right: 25px;text-align: right;}
@@ -196,7 +196,10 @@ input[type="button"]{cursor: pointer;}
 .open_input .sure{border: 0;height: 26px;color: #fff;background-color: #ea2e49;}
 /*main9*/
 .table9{width: 96%;margin-left: 2%}
-.table9 td,.table9 th{border: 1px solid #dcdcdc;padding: 5px;text-align: center;}
+.table9 th,.table9 td{border: 1px solid #dcdcdc;padding: 5px;text-align: center;}
+.table9 thead tr{border-top: 1px solid #dcdcdc}
+.table9 td{border-bottom: 0;border-top: 0;border: 1px solid #dcdcdc\9}
+.table9 tr:last-child{border-bottom: 1px solid #dcdcdc}
 .table9 thead td{background-color: #f0f4fc;text-align: right;color: #f0f}
 .table9 thead span{float: left;color: #000}
 .table9 th{background-color: #f5f5f5;}
@@ -426,11 +429,11 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .postal_rates{margin-bottom: 20px;}
 .rates_table table{width: 100%;margin: 10px 0}
 .rates_table td,.rates_table th{border: 1px solid #d2d2d2;text-align: center;}
-.rates_table td{padding: 10px 0;line-height: 30px;}
+.rates_table td{padding: 10px 0;line-height: 30px;position: relative;}
 .rates_table th{height: 23px;background-color: #f0f0f0;}
 .content .rates_table select,.content .rates_table input[type="text"]{min-width: auto;width: auto;border-color: #b5ccff;height: 18px;line-height: 18px;}
 .content .rates_table select{height: 20px;line-height: 20px;}
-.change_sch{background-color: #cdddff;border: 1px solid #b5ccff;padding: 0 5px;line-height: 20px;}
+.change_sch{background-color: #cdddff;border: 1px solid #b5ccff;padding: 0 5px;line-height: 20px;color: #000}
 .add_sch{width: 100%}
 .content .rates_table input[type="text"]{width: 40px}
 /*改细节*/
@@ -439,6 +442,30 @@ article hr{border: 0; border-top: 1px solid #ededed;margin: 10px 0}
 .howl1{padding:35px 0px 20px 0px;border-bottom: 1px dashed #dcdcdc;margin: 0 35px}
 .howl a{position: relative;;top: -19px;left: 20px;width: 100px;height: 23px;border: 1px solid #dcdcdc;text-align: center;line-height: 23px;color: #000;background-color: #eeeeee;}
 .howl2{padding: 15px 35px}
+/*main9_add*/
+.school{width: 588px;height: 370px;position: absolute;left: 170px;border: 1px solid #b5ccff;background-color: #fff;overflow:hidden;top: 50%;z-index: 10;}
+.school p{height: 37px;line-height: 37px;padding:0 10px;border-bottom: 1px solid #b5ccff;text-align: left;background-color: #f0f0f0;}
+.school ul{text-align: left;padding: 15px;padding-right: 0;overflow: auto;height: 265px}
+.school li{width: 25%;float: left;padding: 0}
+.school li span{margin-left: 10px;}
+.sch_btn{position: absolute;bottom: 0;width: 100%;background-color: #fff;text-align: right;height: 50px;line-height: 50px;}
+.sch_btn input{padding: 5px 10px;background-color: #ea2e49;color: #fff;margin-right: 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

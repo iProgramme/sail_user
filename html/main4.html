@@ -112,7 +112,7 @@
                                     <li class="thename1">我是五个字我是五个字我是五个字我是五个字</li>
                                     <li>￥3.8</li>
                                     <li>库存数量：300万</li>
-                                    <li class="thename4">补仓数量：<a href="javascript:void(0)"></a><span class="disN">编辑补仓数量</span></li>
+                                    <li class="thename4">补仓数量：<u></u><a href="javascript:void(0)"></a><span class="disN">编辑补仓数量</span></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -126,7 +126,7 @@
                                     <li class="thename1">我是五个字我是五个字我是五个字我是五个字</li>
                                     <li>￥3.8</li>
                                     <li>库存数量：300万</li>
-                                    <li class="thename4">补仓数量：<a href="javascript:void(0)"></a><span class="disN">编辑补仓数量</span></li>
+                                    <li class="thename4">补仓数量：<u></u><a href="javascript:void(0)"></a><span class="disN">编辑补仓数量</span></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -140,7 +140,7 @@
                                     <li class="thename1">我是五个字我是五个字我是五个字我是五个字</li>
                                     <li>￥3.8</li>
                                     <li>库存数量：300万</li>
-                                    <li class="thename4">补仓数量：<a href="javascript:void(0)"></a><span class="disN">编辑补仓数量</span></li>
+                                    <li class="thename4">补仓数量：<u></u><a href="javascript:void(0)"></a><span class="disN">编辑补仓数量</span></li>
                                 </ul>
                             </dd>
                         </dl>
@@ -280,7 +280,7 @@
                                <ul class="clear">
                                    <li class="thename1">我是五个字我是五个字我是五个字我是五个字</li>
                                    <li>￥3.8</li>
-                                   <li class="thename4">库存数量：<a href="javascript:void(0)"></a><span class="disN">编库存数量</span></li>
+                                   <li class="thename4">库存数量：<u></u><a href="javascript:void(0)"></a><span class="disN">编库存数量</span></li>
                                </ul>
                            </dd>
                        </dl>
@@ -293,7 +293,7 @@
                                <ul class="clear">
                                    <li class="thename1">我是五个字我是五个字我是五个字我是五个字</li>
                                    <li>￥3.8</li>
-                                   <li class="thename4">库存数量：<a href="javascript:void(0)"></a><span class="disN">编库存数量</span></li>
+                                   <li class="thename4">库存数量：<u></u><a href="javascript:void(0)"></a><span class="disN">编库存数量</span></li>
                                </ul>
                            </dd>
                        </dl>
@@ -306,7 +306,7 @@
                                <ul class="clear">
                                    <li class="thename1">我是五个字我是五个字我是五个字我是五个字</li>
                                    <li>￥3.8</li>
-                                   <li class="thename4">库存数量：<a href="javascript:void(0)"></a><span class="disN">库存数量</span></li>
+                                   <li class="thename4">库存数量：<u></u><a href="javascript:void(0)"></a><span class="disN">库存数量</span></li>
                                </ul>
                            </dd>
                        </dl>
@@ -594,13 +594,20 @@
         })
         // 点补仓数量然后编辑
         $(".longdl li a").click(function () {
-            $(this).parents('li').append('<input type="text" name=""><input type="button" name="" value="保存">')
-            $(this).parents('li').children('a,span').remove();
-            // 编辑之后点保存出现弹窗
+            $(this).parents('li').append('<input type="text" name=""><input type="button" name="" value="保存">');
+            $(this).parents('li').children('a,span').hide();
+            
             $(".thename4 input[type=button]").click(function () {
+                // 编辑之后点保存出现弹窗
                 $(".save_window").show();
                 var the_num=$(this).parents('dd').prev('dt').children('span').text();
                 $(".save_window .window_li1 span").text(the_num)
+                // 点击保存之后显示保存的数字
+                var in_num=$(this).prev('input').val();
+                $(this).parents('li').children('u').html(in_num);
+                $(this).parents('li').children('a').css('display', 'inline-block');
+                $(this).parents('li').children('input').remove();
+                
             })
         });
         // 点击关闭保存的窗口
