@@ -177,9 +177,30 @@
                 $("td").css('z-index', '1');
                 $(this).next('p').show();
                 $(this).parents('td').css('z-index', '2');
+                $(".open_change").css({
+                    background: 'none',
+                    height: '27px',
+                    border:'0px solid #c2c2c2',
+                    width:'87px',
+                    lineHeight:'27px'
+                });
+                $(this).css({
+                    background: 'url(../img/index_load2.png) no-repeat 69px -54px',
+                    height: '25px',
+                    border:'1px solid #c2c2c2',
+                    width:'85px',
+                    lineHeight:'25px'
+                });
             }else{
                 $("td p").hide();
                 $("td").css('z-index', '1');
+                $(this).css({
+                    background: 'none',
+                    height: '27px',
+                    border:'0px solid #c2c2c2',
+                    width:'87px',
+                    lineHeight:'27px'
+                });
             }
         })
         
