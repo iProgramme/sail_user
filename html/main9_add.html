@@ -171,7 +171,7 @@
                             <input type="checkbox" name=""><span>&nbsp;&nbsp;&nbsp;&nbsp;指定包邮可选</span>
                         </label>
                     </div>
-                    <div class="rates_table disN">
+                    <div class="rates_table">
                         <table>
                             <tr>
                                 <th>选择学校</th>
@@ -245,7 +245,7 @@
                                     &nbsp;
                                 </td>
                                 <td>
-                                    <select>
+                                    <select class="ttt">
                                         <option>件数</option>
                                         <option>金额</option>
                                         <option>件数+金额</option>
@@ -309,8 +309,10 @@
             $(".rates_table").toggle()
         });
         // 点击切换表格里面的收费模式
-        $(".rates_table td select").change(function() {
-            alert($(this).text())
+        $(".rates_table  select").change(function() {
+            var sel_num=$(this).find("option:selected").index();
+            $(".condition").hide();
+            $(".condition").eq(sel_num).show()
         });
         // 选择学校
         $(".change_sch").click(function() {

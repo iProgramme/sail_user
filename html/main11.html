@@ -400,10 +400,10 @@
         })
         $(".content_main5 .wid1100_bar input[type=checkbox]").click(function () {
             if ($(this).val()==0) {
-                $(".content_main5 .longdl input[type=checkbox]").prop('checked', true);
+                $(".content_main5 td input[type=checkbox]").prop('checked', true);
                 $(this).attr('value', '1');
-                $(".content_main5 .longdl input[type=checkbox]").click(function () {
-                    $(".content_main1 .longdl input[type=checkbox]").each(function () {
+                $(".content_main5 td input[type=checkbox]").click(function () {
+                    $(".content_main5 td input[type=checkbox]").each(function () {
                         // 这里的this指的是上面each中的那个input
                         if ($(this).is(':checked')) {}else{
                             $(".content_main5 .wid1100_bar input[type=checkbox]").attr('value', '0');
@@ -413,7 +413,7 @@
                 })
                 
             }else{
-                $(".content_main5 .longdl input[type=checkbox]").removeAttr('checked',null)
+                $(".content_main5 td input[type=checkbox]").removeAttr('checked',null)
                 $(this).attr('value', '0');
             }
         })
